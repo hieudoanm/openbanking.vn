@@ -38,8 +38,8 @@
 		--font-sans:
 			ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 		--font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
-		--color-green-600: oklch(62.7% 0.194 149.214);
-		--color-green-700: oklch(52.7% 0.154 150.069);
+		--color-blue-600: oklch(54.6% 0.245 262.881);
+		--color-blue-700: oklch(48.8% 0.243 264.376);
 		--color-white: #fff;
 		--spacing: 0.25rem;
 		--container-xl: 36rem;
@@ -463,8 +463,8 @@
 		border-bottom-style: var(--tw-border-style);
 		border-bottom-width: 1px;
 	}
-	.bg-green-600 {
-		background-color: var(--color-green-600);
+	.bg-blue-600 {
+		background-color: var(--color-blue-600);
 	}
 	.bg-white {
 		background-color: var(--color-white);
@@ -534,11 +534,11 @@
 		--tw-font-weight: var(--font-weight-semibold);
 		font-weight: var(--font-weight-semibold);
 	}
-	.text-green-600 {
-		color: var(--color-green-600);
+	.text-blue-600 {
+		color: var(--color-blue-600);
 	}
-	.text-green-700 {
-		color: var(--color-green-700);
+	.text-blue-700 {
+		color: var(--color-blue-700);
 	}
 	.text-white {
 		color: var(--color-white);
@@ -583,11 +583,11 @@
 		transition-duration: var(--tw-duration, var(--default-transition-duration));
 	}
 	@media (hover: hover) {
-		.hover\:bg-green-700:hover {
-			background-color: var(--color-green-700);
+		.hover\:bg-blue-700:hover {
+			background-color: var(--color-blue-700);
 		}
-		.hover\:text-green-600:hover {
-			color: var(--color-green-600);
+		.hover\:text-blue-600:hover {
+			color: var(--color-blue-600);
 		}
 		.hover\:underline:hover {
 			text-decoration-line: underline;

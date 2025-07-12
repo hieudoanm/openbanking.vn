@@ -11,11 +11,11 @@ const features = [
 export const Features: FC = () => {
 	return (
 		<section id="features" className="px-4 py-16 text-center">
-			<h3 className="mb-10 text-3xl font-semibold text-green-700">Key Features</h3>
+			<h3 className="mb-10 text-3xl font-semibold text-blue-700">Key Features</h3>
 			<div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-2 lg:grid-cols-4">
 				{features.map((feature, index) => (
 					<div key={index} className="flex items-center justify-center gap-3">
-						<FaCheckCircle className="text-xl text-green-600" />
+						<FaCheckCircle className="text-xl text-blue-600" />
 						<span className="text-lg">{feature}</span>
 					</div>
 				))}

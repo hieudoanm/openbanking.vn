@@ -29,7 +29,7 @@
 				x = n(6492);
 			n(5446);
 			let m = new Set();
-			function g(e, t, n, r) {
+			function b(e, t, n, r) {
 				if ((0, a.isLocalURL)(t)) {
 					if (!r.bypassPrefetchedCheck) {
 						let l = t + '%' + n + '%' + (void 0 !== r.locale ? r.locale : 'locale' in e ? e.locale : void 0);
@@ -39,7 +39,7 @@
 					e.prefetch(t, n, r).catch((e) => {});
 				}
 			}
-			function b(e) {
+			function g(e) {
 				return 'string' == typeof e ? e : (0, c.formatUrl)(e);
 			}
 			let j = s.default.forwardRef(function (e, t) {
@@ -67,8 +67,8 @@
 						T = !1 !== y,
 						{ href: A, as: S } = s.default.useMemo(() => {
 							if (!B) {
-								let e = b(c);
-								return { href: e, as: m ? b(m) : e };
+								let e = g(c);
+								return { href: e, as: m ? g(m) : e };
 							}
 							let [e, t] = (0, i.resolveHref)(B, c, !0);
 							return { href: e, as: m ? (0, i.resolveHref)(B, m) : t || e };
@@ -86,7 +86,7 @@
 						),
 						H = (0, x.useMergedRef)(G, R);
 					s.default.useEffect(() => {
-						B && V && T && g(B, A, S, { locale: P });
+						B && V && T && b(B, A, S, { locale: P });
 					}, [S, A, V, P, T, null == B ? void 0 : B.locale, B]);
 					let F = {
 						ref: H,
@@ -143,12 +143,12 @@
 						onMouseEnter(e) {
 							(E || 'function' != typeof C || C(e),
 								E && r.props && 'function' == typeof r.props.onMouseEnter && r.props.onMouseEnter(e),
-								B && g(B, A, S, { locale: P, priority: !0, bypassPrefetchedCheck: !0 }));
+								B && b(B, A, S, { locale: P, priority: !0, bypassPrefetchedCheck: !0 }));
 						},
 						onTouchStart: function (e) {
 							(E || 'function' != typeof M || M(e),
 								E && r.props && 'function' == typeof r.props.onTouchStart && r.props.onTouchStart(e),
-								B && g(B, A, S, { locale: P, priority: !0, bypassPrefetchedCheck: !0 }));
+								B && b(B, A, S, { locale: P, priority: !0, bypassPrefetchedCheck: !0 }));
 						},
 					};
 					if ((0, o.isAbsoluteUrl)(S)) F.href = S;
@@ -483,7 +483,7 @@
 						className: 'mx-auto max-w-4xl bg-white px-4 py-16',
 						children: [
 							(0, r.jsx)('h3', {
-								className: 'mb-12 text-center text-3xl font-semibold text-green-700',
+								className: 'mb-12 text-center text-3xl font-semibold text-blue-700',
 								children: 'C\xe2u hỏi thường gặp',
 							}),
 							(0, r.jsx)('div', {
@@ -496,7 +496,7 @@
 											children: (0, r.jsxs)('div', {
 												className: 'flex items-start gap-3',
 												children: [
-													(0, r.jsx)(l.gZZ, { className: 'mt-1 text-green-600' }),
+													(0, r.jsx)(l.gZZ, { className: 'mt-1 text-blue-600' }),
 													(0, r.jsxs)('div', {
 														children: [
 															(0, r.jsx)('h4', { className: 'mb-1 text-lg font-semibold', children: e.question }),
@@ -523,7 +523,7 @@
 						id: 'features',
 						className: 'px-4 py-16 text-center',
 						children: [
-							(0, r.jsx)('h3', { className: 'mb-10 text-3xl font-semibold text-green-700', children: 'Key Features' }),
+							(0, r.jsx)('h3', { className: 'mb-10 text-3xl font-semibold text-blue-700', children: 'Key Features' }),
 							(0, r.jsx)('div', {
 								className: 'mx-auto grid max-w-6xl gap-8 md:grid-cols-2 lg:grid-cols-4',
 								children: a.map((e, t) =>
@@ -532,7 +532,7 @@
 										{
 											className: 'flex items-center justify-center gap-3',
 											children: [
-												(0, r.jsx)(l.A7C, { className: 'text-xl text-green-600' }),
+												(0, r.jsx)(l.A7C, { className: 'text-xl text-blue-600' }),
 												(0, r.jsx)('span', { className: 'text-lg', children: e }),
 											],
 										},
@@ -547,16 +547,16 @@
 						className: 'px-4 py-20 text-center',
 						children: [
 							(0, r.jsx)('h2', {
-								className: 'mb-6 text-4xl font-bold text-green-600 md:text-5xl',
+								className: 'mb-6 text-4xl font-bold text-blue-600 md:text-5xl',
 								children: 'Kh\xe1m ph\xe1 tiềm năng đổi mới t\xe0i ch\xednh tại Việt Nam',
 							}),
 							(0, r.jsx)('p', {
-								className: 'mx-auto mb-8 max-w-xl text-lg text-green-700',
+								className: 'mx-auto mb-8 max-w-xl text-lg text-blue-700',
 								children:
 									'Tăng cường ứng dụng của bạn với khả năng truy cập dịch vụ ng\xe2n h\xe0ng an to\xe0n v\xe0 thời gian thực th\xf4ng qua Open Banking API tại Việt Nam.',
 							}),
 							(0, r.jsx)('button', {
-								className: 'rounded-full bg-green-600 px-6 py-3 text-lg text-white hover:bg-green-700',
+								className: 'rounded-full bg-blue-600 px-6 py-3 text-lg text-white hover:bg-blue-700',
 								children: 'Kh\xe1m ph\xe1 API',
 							}),
 						],
@@ -567,7 +567,7 @@
 						className: 'py-16',
 						children: [
 							(0, r.jsx)('div', {
-								className: 'mb-6 text-center text-3xl font-semibold text-green-700',
+								className: 'mb-6 text-center text-3xl font-semibold text-blue-700',
 								children: 'Connected with',
 							}),
 							(0, r.jsx)('div', {
@@ -614,17 +614,17 @@
 							className: 'container mx-auto flex items-center justify-between px-4 py-4',
 							children: [
 								(0, r.jsxs)('h1', {
-									className: 'flex items-center gap-2 text-2xl font-bold text-green-600',
+									className: 'flex items-center gap-2 text-2xl font-bold text-blue-600',
 									children: [(0, r.jsx)(l.O2x, {}), ' OpenBankingVN'],
 								}),
 								(0, r.jsxs)('div', {
 									className: 'space-x-6',
 									children: [
-										(0, r.jsx)('a', { href: '#features', className: 'hover:text-green-600', children: 'Features' }),
-										(0, r.jsx)('a', { href: '#faqs', className: 'hover:text-green-600', children: 'FAQs' }),
+										(0, r.jsx)('a', { href: '#features', className: 'hover:text-blue-600', children: 'Features' }),
+										(0, r.jsx)('a', { href: '#faqs', className: 'hover:text-blue-600', children: 'FAQs' }),
 										(0, r.jsx)(p(), {
 											href: '#',
-											className: 'rounded-md bg-green-600 px-4 py-2 text-white transition hover:bg-green-700',
+											className: 'rounded-md bg-blue-600 px-4 py-2 text-white transition hover:bg-blue-700',
 											children: 'Get Started',
 										}),
 									],
@@ -652,11 +652,11 @@
 						button: 'Li\xean hệ tư vấn',
 					},
 				],
-				g = () =>
+				b = () =>
 					(0, r.jsxs)('section', {
 						className: 'bg-white px-4 py-16 text-center',
 						children: [
-							(0, r.jsx)('h3', { className: 'mb-10 text-3xl font-semibold text-green-600', children: 'Pricing' }),
+							(0, r.jsx)('h3', { className: 'mb-10 text-3xl font-semibold text-blue-600', children: 'Pricing' }),
 							(0, r.jsx)('div', {
 								className: 'mx-auto grid max-w-6xl gap-8 md:grid-cols-3',
 								children: m.map((e, t) =>
@@ -666,10 +666,10 @@
 											className: 'rounded-lg border p-6',
 											children: [
 												(0, r.jsx)('h4', { className: 'mb-2 text-xl font-bold', children: e.name }),
-												(0, r.jsx)('p', { className: 'mb-4 font-semibold text-green-600', children: e.price }),
+												(0, r.jsx)('p', { className: 'mb-4 font-semibold text-blue-600', children: e.price }),
 												e.features.map((e, t) => (0, r.jsx)('p', { className: 'mb-2', children: e }, t)),
 												(0, r.jsx)('button', {
-													className: 'mt-4 rounded-full bg-green-600 px-4 py-2 text-white hover:bg-green-700',
+													className: 'mt-4 rounded-full bg-blue-600 px-4 py-2 text-white hover:bg-blue-700',
 													children: e.button,
 												}),
 											],
@@ -680,12 +680,12 @@
 							}),
 						],
 					}),
-				b = () =>
+				g = () =>
 					(0, r.jsxs)('section', {
 						className: 'bg-white px-4 py-16 text-center',
 						children: [
 							(0, r.jsx)('h3', {
-								className: 'mb-6 text-3xl font-semibold text-green-600',
+								className: 'mb-6 text-3xl font-semibold text-blue-600',
 								children: 'Sẵn s\xe0ng kiến tạo tương lai t\xe0i ch\xednh?',
 							}),
 							(0, r.jsx)('p', {
@@ -693,7 +693,7 @@
 								children: 'Bắt đầu t\xedch hợp OpenBankingVN ngay h\xf4m nay để tăng tốc đổi mới sản phẩm của bạn.',
 							}),
 							(0, r.jsx)('button', {
-								className: 'rounded-full bg-green-600 px-6 py-3 text-lg text-white hover:bg-green-700',
+								className: 'rounded-full bg-blue-600 px-6 py-3 text-lg text-white hover:bg-blue-700',
 								children: 'Bắt đầu',
 							}),
 						],
@@ -702,25 +702,25 @@
 					(0, r.jsxs)('section', {
 						className: 'bg-white px-4 py-16 text-center',
 						children: [
-							(0, r.jsx)('h3', { className: 'mb-10 text-3xl font-semibold text-green-600', children: 'How It Works' }),
+							(0, r.jsx)('h3', { className: 'mb-10 text-3xl font-semibold text-blue-600', children: 'How It Works' }),
 							(0, r.jsxs)('div', {
 								className: 'mx-auto grid max-w-6xl gap-8 md:grid-cols-3',
 								children: [
 									(0, r.jsxs)('div', {
 										children: [
-											(0, r.jsx)('h4', { className: 'mb-2 text-xl font-bold text-green-600', children: '1. Register' }),
+											(0, r.jsx)('h4', { className: 'mb-2 text-xl font-bold text-blue-600', children: '1. Register' }),
 											(0, r.jsx)('p', { children: 'Create a developer account and access the dashboard.' }),
 										],
 									}),
 									(0, r.jsxs)('div', {
 										children: [
-											(0, r.jsx)('h4', { className: 'mb-2 text-xl font-bold text-green-600', children: '2. Connect' }),
+											(0, r.jsx)('h4', { className: 'mb-2 text-xl font-bold text-blue-600', children: '2. Connect' }),
 											(0, r.jsx)('p', { children: 'Integrate with our secure APIs using your credentials.' }),
 										],
 									}),
 									(0, r.jsxs)('div', {
 										children: [
-											(0, r.jsx)('h4', { className: 'mb-2 text-xl font-bold text-green-600', children: '3. Launch' }),
+											(0, r.jsx)('h4', { className: 'mb-2 text-xl font-bold text-blue-600', children: '3. Launch' }),
 											(0, r.jsx)('p', { children: 'Deploy innovative fintech solutions for your users.' }),
 										],
 									}),
@@ -736,8 +736,8 @@
 							(0, r.jsx)(c, {}),
 							(0, r.jsx)(d, {}),
 							(0, r.jsx)(j, {}),
-							(0, r.jsx)(g, {}),
 							(0, r.jsx)(b, {}),
+							(0, r.jsx)(g, {}),
 							(0, r.jsx)(i, {}),
 							(0, r.jsx)(f, {}),
 						],
