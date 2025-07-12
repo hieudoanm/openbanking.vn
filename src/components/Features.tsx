@@ -1,11 +1,11 @@
 import { FC } from 'react';
 import { FaCheckCircle } from 'react-icons/fa';
 
-const features: string[] = [
-	'Standardized and secure API protocols',
-	'Real-time access to financial data',
-	'Improved customer experience',
-	'Supports innovation in fintech sector',
+const features = [
+	'Giao thức API tiêu chuẩn và bảo mật',
+	'Truy cập dữ liệu tài chính theo thời gian thực',
+	'Cải thiện trải nghiệm khách hàng',
+	'Hỗ trợ đổi mới trong lĩnh vực fintech',
 ];
 
 export const Features: FC = () => {
