@@ -83,7 +83,7 @@
 | 30  | VPB     | VPBank        | ✅    | ✅    | ✅  |
 | 31  | VTB     | Vietinbank    | ✅    | ✅    | ✅  |
 | 32  | Woori   | Woori Bank    | 🟥    | ✅    | 🟨  |
-|     |         |               | 14    | 28    |     |
+|     |         |               | 14    | 28    | 12  |
 
 ## 💸 Digital Wallet
 
