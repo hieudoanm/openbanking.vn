@@ -24,10 +24,12 @@
 		"lint": "next lint",
 		"predev": "kill-port 3000",
 		"dev": "next dev --turbopack",
-		"prebuild": "rimraf .next",
+		"prebuild": "rimraf .next docs",
 		"build": "next build",
+		"postbuild": "touch docs/.nojekyll",
 		"prestart": "kill-port 3000",
-		"start": "next start"
+		"start": "next start",
+		"prepare": "husky || true"
 	},
 	"dependencies": {
 		"next": "15.3.5",
@@ -43,6 +45,7 @@
 		"@types/react-dom": "19.1.6",
 		"eslint": "9.31.0",
 		"eslint-config-next": "15.3.5",
+		"husky": "9.1.7",
 		"kill-port": "2.0.1",
 		"prettier": "3.6.2",
 		"prettier-plugin-tailwindcss": "0.6.14",
