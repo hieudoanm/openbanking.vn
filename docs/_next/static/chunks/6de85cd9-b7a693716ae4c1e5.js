@@ -1,10 +1,10 @@
 'use strict';
 (self.webpackChunk_N_E = self.webpackChunk_N_E || []).push([
-	[505],
+	[59],
 	{
-		3282: (t, c, a) => {
+		6279: (t, c, a) => {
 			a.d(c, { A7C: () => l, O2x: () => r, gZZ: () => i });
-			var h = a(4373);
+			var h = a(2825);
 			function l(t) {
 				return (0, h.k5)({
 					tag: 'svg',
