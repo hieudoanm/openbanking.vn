@@ -9,10 +9,17 @@
 				r = t.n(l);
 			let c = () =>
 				(0, s.jsxs)('div', {
-					className: 'flex min-h-screen flex-col items-center justify-center bg-white px-4 text-center',
+					className:
+						'flex min-h-screen flex-col items-center justify-center bg-white px-4 text-center',
 					children: [
-						(0, s.jsx)('h1', { className: 'mb-4 text-6xl font-bold text-green-600', children: '500' }),
-						(0, s.jsx)('h2', { className: 'mb-2 text-2xl font-semibold', children: 'Lỗi m\xe1y chủ' }),
+						(0, s.jsx)('h1', {
+							className: 'mb-4 text-6xl font-bold text-green-600',
+							children: '500',
+						}),
+						(0, s.jsx)('h2', {
+							className: 'mb-2 text-2xl font-semibold',
+							children: 'Lỗi m\xe1y chủ',
+						}),
 						(0, s.jsx)('p', {
 							className: 'mb-6 text-green-700',
 							children:
@@ -20,7 +27,8 @@
 						}),
 						(0, s.jsx)(r(), {
 							href: '/',
-							className: 'rounded-full bg-green-600 px-6 py-3 text-lg text-white transition hover:bg-green-700',
+							className:
+								'rounded-full bg-green-600 px-6 py-3 text-lg text-white transition hover:bg-green-700',
 							children: 'Quay lại trang chủ',
 						}),
 					],

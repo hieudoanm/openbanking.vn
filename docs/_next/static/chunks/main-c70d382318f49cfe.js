@@ -5,7 +5,8 @@
 			'use strict';
 			(Object.defineProperty(t, '__esModule', { value: !0 }),
 				!(function (e, t) {
-					for (var r in t) Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
+					for (var r in t)
+						Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
 				})(t, {
 					isRecoverableError: function () {
 						return u;
@@ -26,7 +27,8 @@
 				let r = (0, a.default)(e) && 'cause' in e ? e.cause : e;
 				(0, o.isBailoutToCSRError)(r) || (0, i.reportGlobalError)(r);
 			};
-			('function' == typeof t.default || ('object' == typeof t.default && null !== t.default)) &&
+			('function' == typeof t.default ||
+				('object' == typeof t.default && null !== t.default)) &&
 				void 0 === t.default.__esModule &&
 				(Object.defineProperty(t.default, '__esModule', { value: !0 }),
 				Object.assign(t.default, t),
@@ -46,7 +48,8 @@
 			function a(e) {
 				return (0, o.isRedirectError)(e) || (0, n.isHTTPAccessFallbackError)(e);
 			}
-			('function' == typeof t.default || ('object' == typeof t.default && null !== t.default)) &&
+			('function' == typeof t.default ||
+				('object' == typeof t.default && null !== t.default)) &&
 				void 0 === t.default.__esModule &&
 				(Object.defineProperty(t.default, '__esModule', { value: !0 }),
 				Object.assign(t.default, t),
@@ -62,9 +65,11 @@
 					},
 				}));
 			let r = function () {
-				for (var e = arguments.length, t = Array(e), r = 0; r < e; r++) t[r] = arguments[r];
+				for (var e = arguments.length, t = Array(e), r = 0; r < e; r++)
+					t[r] = arguments[r];
 			};
-			('function' == typeof t.default || ('object' == typeof t.default && null !== t.default)) &&
+			('function' == typeof t.default ||
+				('object' == typeof t.default && null !== t.default)) &&
 				void 0 === t.default.__esModule &&
 				(Object.defineProperty(t.default, '__esModule', { value: !0 }),
 				Object.assign(t.default, t),
@@ -77,7 +82,10 @@
 				let r = document.documentElement;
 				r.dataset.scrollBehavior;
 				let n = r.style.scrollBehavior;
-				((r.style.scrollBehavior = 'auto'), t.dontForceLayout || r.getClientRects(), e(), (r.style.scrollBehavior = n));
+				((r.style.scrollBehavior = 'auto'),
+					t.dontForceLayout || r.getClientRects(),
+					e(),
+					(r.style.scrollBehavior = n));
 			}
 			(Object.defineProperty(t, '__esModule', { value: !0 }),
 				Object.defineProperty(t, 'disableSmoothScrollDuringRouteTransition', {
@@ -105,7 +113,8 @@
 					e
 				);
 			})({});
-			('function' == typeof t.default || ('object' == typeof t.default && null !== t.default)) &&
+			('function' == typeof t.default ||
+				('object' == typeof t.default && null !== t.default)) &&
 				void 0 === t.default.__esModule &&
 				(Object.defineProperty(t.default, '__esModule', { value: !0 }),
 				Object.assign(t.default, t),
@@ -115,7 +124,8 @@
 			'use strict';
 			(Object.defineProperty(t, '__esModule', { value: !0 }),
 				!(function (e, t) {
-					for (var r in t) Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
+					for (var r in t)
+						Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
 				})(t, {
 					DecodeError: function () {
 						return h;
@@ -174,7 +184,8 @@
 				let t,
 					r = !1;
 				return function () {
-					for (var n = arguments.length, o = Array(n), a = 0; a < n; a++) o[a] = arguments[a];
+					for (var n = arguments.length, o = Array(n), a = 0; a < n; a++)
+						o[a] = arguments[a];
 					return (r || ((r = !0), (t = e(...o))), t);
 				};
 			}
@@ -197,23 +208,39 @@
 			}
 			function c(e) {
 				let t = e.split('?');
-				return t[0].replace(/\\/g, '/').replace(/\/\/+/g, '/') + (t[1] ? '?' + t.slice(1).join('?') : '');
+				return (
+					t[0].replace(/\\/g, '/').replace(/\/\/+/g, '/') +
+					(t[1] ? '?' + t.slice(1).join('?') : '')
+				);
 			}
 			async function f(e, t) {
 				let r = t.res || (t.ctx && t.ctx.res);
-				if (!e.getInitialProps) return t.ctx && t.Component ? { pageProps: await f(t.Component, t.ctx) } : {};
+				if (!e.getInitialProps)
+					return t.ctx && t.Component
+						? { pageProps: await f(t.Component, t.ctx) }
+						: {};
 				let n = await e.getInitialProps(t);
 				if (r && s(r)) return n;
 				if (!n)
 					throw Object.defineProperty(
-						Error('"' + u(e) + '.getInitialProps()" should resolve to an object. But found "' + n + '" instead.'),
+						Error(
+							'"' +
+								u(e) +
+								'.getInitialProps()" should resolve to an object. But found "' +
+								n +
+								'" instead.',
+						),
 						'__NEXT_ERROR_CODE',
 						{ value: 'E394', enumerable: !1, configurable: !0 },
 					);
 				return n;
 			}
 			let d = 'undefined' != typeof performance,
-				p = d && ['mark', 'measure', 'getEntriesByName'].every((e) => 'function' == typeof performance[e]);
+				p =
+					d &&
+					['mark', 'measure', 'getEntriesByName'].every(
+						(e) => 'function' == typeof performance[e],
+					);
 			class h extends Error {}
 			class _ extends Error {}
 			class m extends Error {
@@ -226,12 +253,16 @@
 			}
 			class g extends Error {
 				constructor(e, t) {
-					(super(), (this.message = 'Failed to load static file for page: ' + e + ' ' + t));
+					(super(),
+						(this.message =
+							'Failed to load static file for page: ' + e + ' ' + t));
 				}
 			}
 			class b extends Error {
 				constructor() {
-					(super(), (this.code = 'ENOENT'), (this.message = 'Cannot find the middleware module'));
+					(super(),
+						(this.code = 'ENOENT'),
+						(this.message = 'Cannot find the middleware module'));
 				}
 			}
 			function y(e) {
@@ -242,7 +273,8 @@
 			'use strict';
 			var n, o;
 			e.exports =
-				(null == (n = r.g.process) ? void 0 : n.env) && 'object' == typeof (null == (o = r.g.process) ? void 0 : o.env)
+				(null == (n = r.g.process) ? void 0 : n.env) &&
+				'object' == typeof (null == (o = r.g.process) ? void 0 : o.env)
 					? r.g.process
 					: r(3699);
 		},
@@ -265,17 +297,20 @@
 							try {
 								return decodeURIComponent(e);
 							} catch (e) {
-								throw Object.defineProperty(new n.DecodeError('failed to decode param'), '__NEXT_ERROR_CODE', {
-									value: 'E528',
-									enumerable: !1,
-									configurable: !0,
-								});
+								throw Object.defineProperty(
+									new n.DecodeError('failed to decode param'),
+									'__NEXT_ERROR_CODE',
+									{ value: 'E528', enumerable: !1, configurable: !0 },
+								);
 							}
 						},
 						i = {};
 					for (let [e, t] of Object.entries(r)) {
 						let r = o[t.pos];
-						void 0 !== r && (t.repeat ? (i[e] = r.split('/').map((e) => a(e))) : (i[e] = a(r)));
+						void 0 !== r &&
+							(t.repeat
+								? (i[e] = r.split('/').map((e) => a(e)))
+								: (i[e] = a(r)));
 					}
 					return i;
 				};
@@ -310,8 +345,10 @@
 				}));
 		},
 		805: () => {
-			('trimStart' in String.prototype || (String.prototype.trimStart = String.prototype.trimLeft),
-				'trimEnd' in String.prototype || (String.prototype.trimEnd = String.prototype.trimRight),
+			('trimStart' in String.prototype ||
+				(String.prototype.trimStart = String.prototype.trimLeft),
+				'trimEnd' in String.prototype ||
+					(String.prototype.trimEnd = String.prototype.trimRight),
 				'description' in Symbol.prototype ||
 					Object.defineProperty(Symbol.prototype, 'description', {
 						configurable: !0,
@@ -322,7 +359,10 @@
 					}),
 				Array.prototype.flat ||
 					((Array.prototype.flat = function (e, t) {
-						return ((t = this.concat.apply([], this)), e > 1 && t.some(Array.isArray) ? t.flat(e - 1) : t);
+						return (
+							(t = this.concat.apply([], this)),
+							e > 1 && t.some(Array.isArray) ? t.flat(e - 1) : t
+						);
 					}),
 					(Array.prototype.flatMap = function (e, t) {
 						return this.map(e, t).flat();
@@ -353,11 +393,13 @@
 				Array.prototype.at ||
 					(Array.prototype.at = function (e) {
 						var t = Math.trunc(e) || 0;
-						if ((t < 0 && (t += this.length), !(t < 0 || t >= this.length))) return this[t];
+						if ((t < 0 && (t += this.length), !(t < 0 || t >= this.length)))
+							return this[t];
 					}),
 				Object.hasOwn ||
 					(Object.hasOwn = function (e, t) {
-						if (null == e) throw TypeError('Cannot convert undefined or null to object');
+						if (null == e)
+							throw TypeError('Cannot convert undefined or null to object');
 						return Object.prototype.hasOwnProperty.call(Object(e), t);
 					}),
 				'canParse' in URL ||
@@ -373,7 +415,8 @@
 			'use strict';
 			(Object.defineProperty(t, '__esModule', { value: !0 }),
 				!(function (e, t) {
-					for (var r in t) Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
+					for (var r in t)
+						Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
 				})(t, {
 					INTERCEPTION_ROUTE_MARKERS: function () {
 						return o;
@@ -388,7 +431,9 @@
 			let n = r(1538),
 				o = ['(..)(..)', '(.)', '(..)', '(...)'];
 			function a(e) {
-				return void 0 !== e.split('/').find((e) => o.find((t) => e.startsWith(t)));
+				return (
+					void 0 !== e.split('/').find((e) => o.find((t) => e.startsWith(t)))
+				);
 			}
 			function i(e) {
 				let t, r, a;
@@ -415,7 +460,9 @@
 						if ('/' === t)
 							throw Object.defineProperty(
 								Error(
-									'Invalid interception route: ' + e + '. Cannot use (..) marker at the root level, use (.) instead.',
+									'Invalid interception route: ' +
+										e +
+										'. Cannot use (..) marker at the root level, use (.) instead.',
 								),
 								'__NEXT_ERROR_CODE',
 								{ value: 'E207', enumerable: !1, configurable: !0 },
@@ -440,11 +487,11 @@
 						a = i.slice(0, -2).concat(a).join('/');
 						break;
 					default:
-						throw Object.defineProperty(Error('Invariant: unexpected marker'), '__NEXT_ERROR_CODE', {
-							value: 'E112',
-							enumerable: !1,
-							configurable: !0,
-						});
+						throw Object.defineProperty(
+							Error('Invariant: unexpected marker'),
+							'__NEXT_ERROR_CODE',
+							{ value: 'E112', enumerable: !1, configurable: !0 },
+						);
 				}
 				return { interceptingRoute: t, interceptedRoute: a };
 			}
@@ -453,7 +500,8 @@
 			'use strict';
 			(Object.defineProperty(t, '__esModule', { value: !0 }),
 				!(function (e, t) {
-					for (var r in t) Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
+					for (var r in t)
+						Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
 				})(t, {
 					PathParamsContext: function () {
 						return i;
@@ -474,7 +522,8 @@
 			'use strict';
 			(Object.defineProperty(t, '__esModule', { value: !0 }),
 				!(function (e, t) {
-					for (var r in t) Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
+					for (var r in t)
+						Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
 				})(t, {
 					cancelIdleCallback: function () {
 						return n;
@@ -484,7 +533,9 @@
 					},
 				}));
 			let r =
-					('undefined' != typeof self && self.requestIdleCallback && self.requestIdleCallback.bind(window)) ||
+					('undefined' != typeof self &&
+						self.requestIdleCallback &&
+						self.requestIdleCallback.bind(window)) ||
 					function (e) {
 						let t = Date.now();
 						return self.setTimeout(function () {
@@ -497,11 +548,14 @@
 						}, 1);
 					},
 				n =
-					('undefined' != typeof self && self.cancelIdleCallback && self.cancelIdleCallback.bind(window)) ||
+					('undefined' != typeof self &&
+						self.cancelIdleCallback &&
+						self.cancelIdleCallback.bind(window)) ||
 					function (e) {
 						return clearTimeout(e);
 					};
-			('function' == typeof t.default || ('object' == typeof t.default && null !== t.default)) &&
+			('function' == typeof t.default ||
+				('object' == typeof t.default && null !== t.default)) &&
 				void 0 === t.default.__esModule &&
 				(Object.defineProperty(t.default, '__esModule', { value: !0 }),
 				Object.assign(t.default, t),
@@ -518,7 +572,8 @@
 			'use strict';
 			(Object.defineProperty(t, '__esModule', { value: !0 }),
 				!(function (e, t) {
-					for (var r in t) Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
+					for (var r in t)
+						Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
 				})(t, {
 					normalizeAppPath: function () {
 						return a;
@@ -561,7 +616,12 @@
 						e[t] && e[t].splice(e[t].indexOf(r) >>> 0, 1);
 					},
 					emit(t) {
-						for (var r = arguments.length, n = Array(r > 1 ? r - 1 : 0), o = 1; o < r; o++) n[o - 1] = arguments[o];
+						for (
+							var r = arguments.length, n = Array(r > 1 ? r - 1 : 0), o = 1;
+							o < r;
+							o++
+						)
+							n[o - 1] = arguments[o];
 						(e[t] || []).slice().map((e) => {
 							e(...n);
 						});
@@ -583,7 +643,8 @@
 			let _ = r(8781);
 			(Object.defineProperty(t, '__esModule', { value: !0 }),
 				!(function (e, t) {
-					for (var r in t) Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
+					for (var r in t)
+						Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
 				})(t, {
 					emitter: function () {
 						return X;
@@ -640,13 +701,21 @@
 					(this.scrollToHash(),
 						n.isSsr &&
 							(o.isFallback ||
-								(o.nextExport && ((0, O.isDynamicRoute)(n.pathname) || location.search || G)) ||
+								(o.nextExport &&
+									((0, O.isDynamicRoute)(n.pathname) ||
+										location.search ||
+										G)) ||
 								(o.props && o.props.__N_SSG && (location.search || G))) &&
 							n
 								.replace(
 									n.pathname +
 										'?' +
-										String((0, S.assign)((0, S.urlQueryToSearchParams)(n.query), new URLSearchParams(location.search))),
+										String(
+											(0, S.assign)(
+												(0, S.urlQueryToSearchParams)(n.query),
+												new URLSearchParams(location.search),
+											),
+										),
 									a,
 									{ _h: 1, shallow: !o.isFallback && !G },
 								)
@@ -669,13 +738,18 @@
 			}
 			async function V(e) {
 				(void 0 === e && (e = {}),
-					(o = JSON.parse(document.getElementById('__NEXT_DATA__').textContent)),
+					(o = JSON.parse(
+						document.getElementById('__NEXT_DATA__').textContent,
+					)),
 					(window.__NEXT_DATA__ = o),
 					(h = o.defaultLocale));
 				let t = o.assetPrefix || '';
 				if (
 					(self.__next_set_public_path__('' + t + '/_next/'),
-					(0, T.setConfig)({ serverRuntimeConfig: {}, publicRuntimeConfig: o.runtimeConfig || {} }),
+					(0, T.setConfig)({
+						serverRuntimeConfig: {},
+						publicRuntimeConfig: o.runtimeConfig || {},
+					}),
 					(a = (0, j.getURL)()),
 					(0, D.hasBasePath)(a) && (a = (0, L.removeBasePath)(a)),
 					o.scriptLoader)
@@ -689,7 +763,8 @@
 					return i.routeLoader.onEntrypoint(t, r);
 				};
 				return (
-					window.__NEXT_P && window.__NEXT_P.map((e) => setTimeout(() => s(e), 0)),
+					window.__NEXT_P &&
+						window.__NEXT_P.map((e) => setTimeout(() => s(e), 0)),
 					(window.__NEXT_P = []),
 					(window.__NEXT_P.push = s),
 					((u = (0, w.default)()).getIsSsr = () => n.isSsr),
@@ -705,7 +780,10 @@
 				let { children: r } = e,
 					o = b.default.useMemo(() => (0, k.adaptForAppRouterInstance)(n), []);
 				return (0, g.jsx)(q, {
-					fn: (e) => $({ App: f, err: e }).catch((e) => console.error('Error rendering page: ', e)),
+					fn: (e) =>
+						$({ App: f, err: e }).catch((e) =>
+							console.error('Error rendering page: ', e),
+						),
 					children: (0, g.jsx)(U.AppRouterContext.Provider, {
 						value: o,
 						children: (0, g.jsx)(F.SearchParamsContext.Provider, {
@@ -721,7 +799,9 @@
 											value: u,
 											children: (0, g.jsx)(M.ImageConfigContext.Provider, {
 												value: {
-													deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+													deviceSizes: [
+														640, 750, 828, 1080, 1200, 1920, 2048, 3840,
+													],
 													imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
 													path: '/openbanking.vn/_next/image/',
 													loader: 'default',
@@ -761,7 +841,10 @@
 												.then(() => _._(r(8531)))
 												.then((r) => ((e.App = t = r.default), n)),
 										)
-										.then((e) => ({ ErrorComponent: e.default, styleSheets: [] }))
+										.then((e) => ({
+											ErrorComponent: e.default,
+											styleSheets: [],
+										}))
 								: { ErrorComponent: o, styleSheets: a };
 						})
 						.then((r) => {
@@ -772,11 +855,21 @@
 									Component: u,
 									AppTree: c,
 									router: n,
-									ctx: { err: l, pathname: o.page, query: o.query, asPath: a, AppTree: c },
+									ctx: {
+										err: l,
+										pathname: o.page,
+										query: o.query,
+										asPath: a,
+										AppTree: c,
+									},
 								};
 							return Promise.resolve(
-								(null == (i = e.props) ? void 0 : i.err) ? e.props : (0, j.loadGetInitialProps)(t, f),
-							).then((t) => ei({ ...e, err: l, Component: u, styleSheets: s, props: t }));
+								(null == (i = e.props) ? void 0 : i.err)
+									? e.props
+									: (0, j.loadGetInitialProps)(t, f),
+							).then((t) =>
+								ei({ ...e, err: l, Component: u, styleSheets: s, props: t }),
+							);
 						})
 				);
 			}
@@ -800,13 +893,19 @@
 				ee = null,
 				et = !0;
 			function er() {
-				[J.beforeRender, J.afterHydrate, J.afterRender, J.routeChange].forEach((e) => performance.clearMarks(e));
+				[J.beforeRender, J.afterHydrate, J.afterRender, J.routeChange].forEach(
+					(e) => performance.clearMarks(e),
+				);
 			}
 			function en() {
 				j.ST &&
 					(performance.mark(J.afterHydrate),
 					performance.getEntriesByName(J.beforeRender, 'mark').length &&
-						(performance.measure(Z.beforeHydration, J.navigationStart, J.beforeRender),
+						(performance.measure(
+							Z.beforeHydration,
+							J.navigationStart,
+							J.beforeRender,
+						),
 						performance.measure(Z.hydration, J.beforeRender, J.afterHydrate)),
 					d && performance.getEntriesByName(Z.hydration).forEach(d),
 					er());
@@ -817,13 +916,19 @@
 				let e = performance.getEntriesByName(J.routeChange, 'mark');
 				e.length &&
 					(performance.getEntriesByName(J.beforeRender, 'mark').length &&
-						(performance.measure(Z.routeChangeToRender, e[0].name, J.beforeRender),
+						(performance.measure(
+							Z.routeChangeToRender,
+							e[0].name,
+							J.beforeRender,
+						),
 						performance.measure(Z.render, J.beforeRender, J.afterRender),
 						d &&
 							(performance.getEntriesByName(Z.render).forEach(d),
 							performance.getEntriesByName(Z.routeChangeToRender).forEach(d))),
 					er(),
-					[Z.routeChangeToRender, Z.render].forEach((e) => performance.clearMeasures(e)));
+					[Z.routeChangeToRender, Z.render].forEach((e) =>
+						performance.clearMeasures(e),
+					));
 			}
 			function ea(e) {
 				let { callbacks: t, children: r } = e;
@@ -845,11 +950,11 @@
 							}),
 							(c = () => {
 								((p = !0), (c = null));
-								let e = Object.defineProperty(Error('Cancel rendering route'), '__NEXT_ERROR_CODE', {
-									value: 'E503',
-									enumerable: !1,
-									configurable: !0,
-								});
+								let e = Object.defineProperty(
+									Error('Cancel rendering route'),
+									'__NEXT_ERROR_CODE',
+									{ value: 'E503', enumerable: !1, configurable: !0 },
+								);
 								((e.cancelled = !0), t(e));
 							}));
 					});
@@ -858,7 +963,11 @@
 				}
 				!(function () {
 					if (!f) return;
-					let e = new Set(W(document.querySelectorAll('style[data-n-href]')).map((e) => e.getAttribute('data-n-href'))),
+					let e = new Set(
+							W(document.querySelectorAll('style[data-n-href]')).map((e) =>
+								e.getAttribute('data-n-href'),
+							),
+						),
 						t = document.querySelector('noscript[data-n-css]'),
 						r = null == t ? void 0 : t.getAttribute('data-n-css');
 					f.forEach((t) => {
@@ -882,17 +991,24 @@
 										t = W(document.querySelectorAll('style[data-n-href]')),
 										r = t.map((e) => e.getAttribute('data-n-href'));
 									for (let n = 0; n < r.length; ++n)
-										e.has(r[n]) ? t[n].removeAttribute('media') : t[n].setAttribute('media', 'x');
+										e.has(r[n])
+											? t[n].removeAttribute('media')
+											: t[n].setAttribute('media', 'x');
 									let n = document.querySelector('noscript[data-n-css]');
 									(n &&
 										f.forEach((e) => {
 											let { href: t } = e,
-												r = document.querySelector('style[data-n-href="' + t + '"]');
-											r && (n.parentNode.insertBefore(r, n.nextSibling), (n = r));
+												r = document.querySelector(
+													'style[data-n-href="' + t + '"]',
+												);
+											r &&
+												(n.parentNode.insertBefore(r, n.nextSibling), (n = r));
 										}),
-										W(document.querySelectorAll('link[data-n-p]')).forEach((e) => {
-											e.parentNode.removeChild(e);
-										}));
+										W(document.querySelectorAll('link[data-n-p]')).forEach(
+											(e) => {
+												e.parentNode.removeChild(e);
+											},
+										));
 								}
 								if (e.scroll) {
 									let { x: t, y: r } = e.scroll;
@@ -905,7 +1021,10 @@
 						(0, g.jsxs)(Y, {
 							children: [
 								z(o, d),
-								(0, g.jsx)(A.Portal, { type: 'next-route-announcer', children: (0, g.jsx)(I.RouteAnnouncer, {}) }),
+								(0, g.jsx)(A.Portal, {
+									type: 'next-route-announcer',
+									children: (0, g.jsx)(I.RouteAnnouncer, {}),
+								}),
 							],
 						}),
 					],
@@ -914,18 +1033,25 @@
 				j.ST && performance.mark(J.beforeRender);
 				let P =
 					((t = et ? en : eo),
-					(0, g.jsx)(ea, { callbacks: [t, _], children: (0, g.jsx)(b.default.StrictMode, { children: m }) }));
+					(0, g.jsx)(ea, {
+						callbacks: [t, _],
+						children: (0, g.jsx)(b.default.StrictMode, { children: m }),
+					}));
 				return (
 					ee
 						? (0, b.default.startTransition)(() => {
 								ee.render(P);
 							})
-						: ((ee = y.default.hydrateRoot(E, P, { onRecoverableError: B.onRecoverableError })), (et = !1)),
+						: ((ee = y.default.hydrateRoot(E, P, {
+								onRecoverableError: B.onRecoverableError,
+							})),
+							(et = !1)),
 					h
 				);
 			}
 			async function el(e) {
-				if (e.err && (void 0 === e.Component || !e.isHydratePass)) return void (await $(e));
+				if (e.err && (void 0 === e.Component || !e.isHydratePass))
+					return void (await $(e));
 				try {
 					await ei(e);
 				} catch (r) {
@@ -945,15 +1071,28 @@
 							r.reportWebVitals &&
 							(d = (e) => {
 								let t,
-									{ id: n, name: o, startTime: a, value: i, duration: l, entryType: u, entries: s, attribution: c } = e,
-									f = Date.now() + '-' + (Math.floor(Math.random() * (9e12 - 1)) + 1e12);
+									{
+										id: n,
+										name: o,
+										startTime: a,
+										value: i,
+										duration: l,
+										entryType: u,
+										entries: s,
+										attribution: c,
+									} = e,
+									f =
+										Date.now() +
+										'-' +
+										(Math.floor(Math.random() * (9e12 - 1)) + 1e12);
 								s && s.length && (t = s[0].startTime);
 								let d = {
 									id: n || f,
 									name: o,
 									startTime: a || t,
 									value: null == i ? l : i,
-									label: 'mark' === u || 'measure' === u ? 'custom' : 'web-vital',
+									label:
+										'mark' === u || 'measure' === u ? 'custom' : 'web-vital',
 								};
 								(c && (d.attribution = c), r.reportWebVitals(d));
 							}));
@@ -963,7 +1102,8 @@
 				} catch (e) {
 					t = (0, N.getProperError)(e);
 				}
-				(window.__NEXT_PRELOADREADY && (await window.__NEXT_PRELOADREADY(o.dynamicIds)),
+				(window.__NEXT_PRELOADREADY &&
+					(await window.__NEXT_PRELOADREADY(o.dynamicIds)),
 					(n = (0, x.createRouter)(o.page, o.query, a, {
 						initialProps: o.props,
 						pageLoader: i,
@@ -972,7 +1112,8 @@
 						wrapApp: K,
 						err: t,
 						isFallback: !!o.isFallback,
-						subscription: (e, t, r) => el(Object.assign({}, e, { App: t, scroll: r })),
+						subscription: (e, t, r) =>
+							el(Object.assign({}, e, { App: t, scroll: r })),
 						locale: o.locale,
 						locales: o.locales,
 						defaultLocale: h,
@@ -980,10 +1121,19 @@
 						isPreview: o.isPreview,
 					})),
 					(G = await n._initialMatchesMiddlewarePromise));
-				let r = { App: f, initial: !0, Component: p, props: o.props, err: t, isHydratePass: !0 };
-				((null == e ? void 0 : e.beforeRender) && (await e.beforeRender()), el(r));
+				let r = {
+					App: f,
+					initial: !0,
+					Component: p,
+					props: o.props,
+					err: t,
+					isHydratePass: !0,
+				};
+				((null == e ? void 0 : e.beforeRender) && (await e.beforeRender()),
+					el(r));
 			}
-			('function' == typeof t.default || ('object' == typeof t.default && null !== t.default)) &&
+			('function' == typeof t.default ||
+				('object' == typeof t.default && null !== t.default)) &&
 				void 0 === t.default.__esModule &&
 				(Object.defineProperty(t.default, '__esModule', { value: !0 }),
 				Object.assign(t.default, t),
@@ -1015,7 +1165,8 @@
 			function o(e) {
 				return (0, n.pathHasPrefix)(e, '/openbanking.vn');
 			}
-			('function' == typeof t.default || ('object' == typeof t.default && null !== t.default)) &&
+			('function' == typeof t.default ||
+				('object' == typeof t.default && null !== t.default)) &&
 				void 0 === t.default.__esModule &&
 				(Object.defineProperty(t.default, '__esModule', { value: !0 }),
 				Object.assign(t.default, t),
@@ -1029,7 +1180,8 @@
 			'use strict';
 			(Object.defineProperty(t, '__esModule', { value: !0 }),
 				!(function (e, t) {
-					for (var r in t) Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
+					for (var r in t)
+						Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
 				})(t, {
 					getSortedRouteObjects: function () {
 						return n.getSortedRouteObjects;
@@ -1048,7 +1200,8 @@
 			'use strict';
 			(Object.defineProperty(t, '__esModule', { value: !0 }),
 				!(function (e, t) {
-					for (var r in t) Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
+					for (var r in t)
+						Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
 				})(t, {
 					APP_BUILD_MANIFEST: function () {
 						return y;
@@ -1307,8 +1460,18 @@
 				eo = 'edge-runtime-webpack',
 				ea = '__N_SSG',
 				ei = '__N_SSP',
-				el = { name: 'Times New Roman', xAvgCharWidth: 821, azAvgWidth: 854.3953488372093, unitsPerEm: 2048 },
-				eu = { name: 'Arial', xAvgCharWidth: 904, azAvgWidth: 934.5116279069767, unitsPerEm: 2048 },
+				el = {
+					name: 'Times New Roman',
+					xAvgCharWidth: 821,
+					azAvgWidth: 854.3953488372093,
+					unitsPerEm: 2048,
+				},
+				eu = {
+					name: 'Arial',
+					xAvgCharWidth: 904,
+					azAvgWidth: 934.5116279069767,
+					unitsPerEm: 2048,
+				},
 				es = ['/500'],
 				ec = 1,
 				ef = 6e3,
@@ -1332,7 +1495,8 @@
 					'WritableStreamDefaultController',
 				],
 				eh = new Set([K, J, Z, $]);
-			('function' == typeof t.default || ('object' == typeof t.default && null !== t.default)) &&
+			('function' == typeof t.default ||
+				('object' == typeof t.default && null !== t.default)) &&
 				void 0 === t.default.__esModule &&
 				(Object.defineProperty(t.default, '__esModule', { value: !0 }),
 				Object.assign(t.default, t),
@@ -1342,7 +1506,8 @@
 			'use strict';
 			(Object.defineProperty(t, '__esModule', { value: !0 }),
 				!(function (e, t) {
-					for (var r in t) Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
+					for (var r in t)
+						Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
 				})(t, {
 					BailoutToCSRError: function () {
 						return n;
@@ -1354,11 +1519,15 @@
 			let r = 'BAILOUT_TO_CLIENT_SIDE_RENDERING';
 			class n extends Error {
 				constructor(e) {
-					(super('Bail out to client-side rendering: ' + e), (this.reason = e), (this.digest = r));
+					(super('Bail out to client-side rendering: ' + e),
+						(this.reason = e),
+						(this.digest = r));
 				}
 			}
 			function o(e) {
-				return 'object' == typeof e && null !== e && 'digest' in e && e.digest === r;
+				return (
+					'object' == typeof e && null !== e && 'digest' in e && e.digest === r
+				);
 			}
 		},
 		3099: (e, t, r) => {
@@ -1405,7 +1574,8 @@
 						a ? (0, o.createPortal)(t, a) : null
 					);
 				};
-			('function' == typeof t.default || ('object' == typeof t.default && null !== t.default)) &&
+			('function' == typeof t.default ||
+				('object' == typeof t.default && null !== t.default)) &&
 				void 0 === t.default.__esModule &&
 				(Object.defineProperty(t.default, '__esModule', { value: !0 }),
 				Object.assign(t.default, t),
@@ -1415,7 +1585,8 @@
 			'use strict';
 			(Object.defineProperty(t, '__esModule', { value: !0 }),
 				!(function (e, t) {
-					for (var r in t) Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
+					for (var r in t)
+						Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
 				})(t, {
 					Router: function () {
 						return a.default;
@@ -1470,7 +1641,9 @@
 			function d() {
 				if (!s.router)
 					throw Object.defineProperty(
-						Error('No router instance found.\nYou should only use "next/router" on the client side of your app.\n'),
+						Error(
+							'No router instance found.\nYou should only use "next/router" on the client side of your app.\n',
+						),
 						'__NEXT_ERROR_CODE',
 						{ value: 'E394', enumerable: !1, configurable: !0 },
 					);
@@ -1482,7 +1655,8 @@
 				}),
 				f.forEach((e) => {
 					s[e] = function () {
-						for (var t = arguments.length, r = Array(t), n = 0; n < t; n++) r[n] = arguments[n];
+						for (var t = arguments.length, r = Array(t), n = 0; n < t; n++)
+							r[n] = arguments[n];
 						return d()[e](...r);
 					};
 				}),
@@ -1496,14 +1670,17 @@
 				].forEach((e) => {
 					s.ready(() => {
 						a.default.events.on(e, function () {
-							for (var t = arguments.length, r = Array(t), n = 0; n < t; n++) r[n] = arguments[n];
+							for (var t = arguments.length, r = Array(t), n = 0; n < t; n++)
+								r[n] = arguments[n];
 							let o = 'on' + e.charAt(0).toUpperCase() + e.substring(1);
 							if (s[o])
 								try {
 									s[o](...r);
 								} catch (e) {
 									(console.error('Error when running the Router event: ' + o),
-										console.error((0, l.default)(e) ? e.message + '\n' + e.stack : e + ''));
+										console.error(
+											(0, l.default)(e) ? e.message + '\n' + e.stack : e + '',
+										));
 								}
 						});
 					});
@@ -1513,14 +1690,17 @@
 				let e = o.default.useContext(i.RouterContext);
 				if (!e)
 					throw Object.defineProperty(
-						Error('NextRouter was not mounted. https://nextjs.org/docs/messages/next-router-not-mounted'),
+						Error(
+							'NextRouter was not mounted. https://nextjs.org/docs/messages/next-router-not-mounted',
+						),
 						'__NEXT_ERROR_CODE',
 						{ value: 'E509', enumerable: !1, configurable: !0 },
 					);
 				return e;
 			}
 			function _() {
-				for (var e = arguments.length, t = Array(e), r = 0; r < e; r++) t[r] = arguments[r];
+				for (var e = arguments.length, t = Array(e), r = 0; r < e; r++)
+					t[r] = arguments[r];
 				return (
 					(s.router = new a.default(...t)),
 					s.readyCallbacks.forEach((e) => e()),
@@ -1541,14 +1721,16 @@
 					(t.events = a.default.events),
 					f.forEach((r) => {
 						t[r] = function () {
-							for (var t = arguments.length, n = Array(t), o = 0; o < t; o++) n[o] = arguments[o];
+							for (var t = arguments.length, n = Array(t), o = 0; o < t; o++)
+								n[o] = arguments[o];
 							return e[r](...n);
 						};
 					}),
 					t
 				);
 			}
-			('function' == typeof t.default || ('object' == typeof t.default && null !== t.default)) &&
+			('function' == typeof t.default ||
+				('object' == typeof t.default && null !== t.default)) &&
 				void 0 === t.default.__esModule &&
 				(Object.defineProperty(t.default, '__esModule', { value: !0 }),
 				Object.assign(t.default, t),
@@ -1588,7 +1770,11 @@
 					l = o.indexOf(i);
 				return l < 0
 					? { pathname: e }
-					: ((n = t[l]), { pathname: (e = e.slice(n.length + 1) || '/'), detectedLocale: n });
+					: ((n = t[l]),
+						{
+							pathname: (e = e.slice(n.length + 1) || '/'),
+							detectedLocale: n,
+						});
 			}
 		},
 		3532: (e, t, r) => {
@@ -1604,7 +1790,11 @@
 				o = r(6086);
 			function a(e) {
 				let t = (0, o.normalizePathSep)(e);
-				return t.startsWith('/index/') && !(0, n.isDynamicRoute)(t) ? t.slice(6) : '/index' !== t ? t : '/';
+				return t.startsWith('/index/') && !(0, n.isDynamicRoute)(t)
+					? t.slice(6)
+					: '/index' !== t
+						? t
+						: '/';
 			}
 		},
 		3612: (e, t, r) => {
@@ -1621,7 +1811,8 @@
 				a = /\/\[[^/]+\](?=\/|$)/;
 			function i(e, t) {
 				return (void 0 === t && (t = !0),
-				(0, n.isInterceptionRouteAppPath)(e) && (e = (0, n.extractInterceptionRouteInformation)(e).interceptedRoute),
+				(0, n.isInterceptionRouteAppPath)(e) &&
+					(e = (0, n.extractInterceptionRouteInformation)(e).interceptedRoute),
 				t)
 					? a.test(e)
 					: o.test(e);
@@ -1653,7 +1844,8 @@
 							}
 							function l(e) {
 								if (t === setTimeout) return setTimeout(e, 0);
-								if ((t === a || !t) && setTimeout) return ((t = setTimeout), setTimeout(e, 0));
+								if ((t === a || !t) && setTimeout)
+									return ((t = setTimeout), setTimeout(e, 0));
 								try {
 									return t(e, 0);
 								} catch (r) {
@@ -1668,7 +1860,11 @@
 								s = !1,
 								c = -1;
 							function f() {
-								s && n && ((s = !1), n.length ? (u = n.concat(u)) : (c = -1), u.length && d());
+								s &&
+									n &&
+									((s = !1),
+									n.length ? (u = n.concat(u)) : (c = -1),
+									u.length && d());
 							}
 							function d() {
 								if (!s) {
@@ -1682,7 +1878,8 @@
 										(s = !1),
 										(function (e) {
 											if (r === clearTimeout) return clearTimeout(e);
-											if ((r === i || !r) && clearTimeout) return ((r = clearTimeout), clearTimeout(e));
+											if ((r === i || !r) && clearTimeout)
+												return ((r = clearTimeout), clearTimeout(e));
 											try {
 												r(e);
 											} catch (t) {
@@ -1701,7 +1898,9 @@
 							function h() {}
 							((o.nextTick = function (e) {
 								var t = Array(arguments.length - 1);
-								if (arguments.length > 1) for (var r = 1; r < arguments.length; r++) t[r - 1] = arguments[r];
+								if (arguments.length > 1)
+									for (var r = 1; r < arguments.length; r++)
+										t[r - 1] = arguments[r];
 								(u.push(new p(e, t)), 1 !== u.length || s || l(d));
 							}),
 								(p.prototype.run = function () {
@@ -1758,13 +1957,20 @@
 		3809: () => {},
 		3875: (e) => {
 			'use strict';
-			e.exports = ['chrome 64', 'edge 79', 'firefox 67', 'opera 51', 'safari 12'];
+			e.exports = [
+				'chrome 64',
+				'edge 79',
+				'firefox 67',
+				'opera 51',
+				'safari 12',
+			];
 		},
 		3898: (e, t, r) => {
 			'use strict';
 			(Object.defineProperty(t, '__esModule', { value: !0 }),
 				!(function (e, t) {
-					for (var r in t) Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
+					for (var r in t)
+						Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
 				})(t, {
 					default: function () {
 						return a;
@@ -1779,7 +1985,11 @@
 					let r = t.getAttribute('nonce');
 					if (r && !e.getAttribute('nonce')) {
 						let n = t.cloneNode(!0);
-						return (n.setAttribute('nonce', ''), (n.nonce = r), r === e.nonce && e.isEqualNode(n));
+						return (
+							n.setAttribute('nonce', ''),
+							(n.nonce = r),
+							r === e.nonce && e.isEqualNode(n)
+						);
 					}
 				}
 				return e.isEqualNode(t);
@@ -1791,8 +2001,15 @@
 						let t = {};
 						e.forEach((e) => {
 							if ('link' === e.type && e.props['data-optimized-fonts'])
-								if (document.querySelector('style[data-href="' + e.props['data-href'] + '"]')) return;
-								else ((e.props.href = e.props['data-href']), (e.props['data-href'] = void 0));
+								if (
+									document.querySelector(
+										'style[data-href="' + e.props['data-href'] + '"]',
+									)
+								)
+									return;
+								else
+									((e.props.href = e.props['data-href']),
+										(e.props['data-href'] = void 0));
 							let r = t[e.type] || [];
 							(r.push(e), (t[e.type] = r));
 						});
@@ -1807,7 +2024,9 @@
 								((e, t) => {
 									let r = document.querySelector('head');
 									if (!r) return;
-									let a = new Set(r.querySelectorAll('' + e + '[data-next-head]'));
+									let a = new Set(
+										r.querySelectorAll('' + e + '[data-next-head]'),
+									);
 									if ('meta' === e) {
 										let e = r.querySelector('meta[charset]');
 										null !== e && a.add(e);
@@ -1822,7 +2041,13 @@
 											return (
 												i
 													? (o.innerHTML = i.__html || '')
-													: a && (o.textContent = 'string' == typeof a ? a : Array.isArray(a) ? a.join('') : ''),
+													: a &&
+														(o.textContent =
+															'string' == typeof a
+																? a
+																: Array.isArray(a)
+																	? a.join('')
+																	: ''),
 												o
 											);
 										})(t[e]);
@@ -1840,14 +2065,17 @@
 										null == (l = e.parentNode) || l.removeChild(e);
 									}
 									for (let e of i)
-										('meta' === e.tagName.toLowerCase() && null !== e.getAttribute('charset') && r.prepend(e),
+										('meta' === e.tagName.toLowerCase() &&
+											null !== e.getAttribute('charset') &&
+											r.prepend(e),
 											r.appendChild(e));
 								})(e, t[e] || []);
 							}));
 					},
 				};
 			}
-			('function' == typeof t.default || ('object' == typeof t.default && null !== t.default)) &&
+			('function' == typeof t.default ||
+				('object' == typeof t.default && null !== t.default)) &&
 				void 0 === t.default.__esModule &&
 				(Object.defineProperty(t.default, '__esModule', { value: !0 }),
 				Object.assign(t.default, t),
@@ -1857,7 +2085,8 @@
 			'use strict';
 			(Object.defineProperty(t, '__esModule', { value: !0 }),
 				!(function (e, t) {
-					for (var r in t) Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
+					for (var r in t)
+						Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
 				})(t, {
 					PathnameContextProviderAdapter: function () {
 						return p;
@@ -1905,12 +2134,15 @@
 				};
 			}
 			function f(e) {
-				return e.isReady && e.query ? (0, u.asPathToSearchParams)(e.asPath) : new URLSearchParams();
+				return e.isReady && e.query
+					? (0, u.asPathToSearchParams)(e.asPath)
+					: new URLSearchParams();
 			}
 			function d(e) {
 				if (!e.isReady || !e.query) return null;
 				let t = {};
-				for (let r of Object.keys((0, s.getRouteRegex)(e.pathname).groups)) t[r] = e.query[r];
+				for (let r of Object.keys((0, s.getRouteRegex)(e.pathname).groups))
+					t[r] = e.query[r];
 				return t;
 			}
 			function p(e) {
@@ -1919,7 +2151,11 @@
 					s = (0, a.useMemo)(() => {
 						let e,
 							t = u.current;
-						if ((t && (u.current = !1), (0, l.isDynamicRoute)(r.pathname) && (r.isFallback || (t && !r.isReady))))
+						if (
+							(t && (u.current = !1),
+							(0, l.isDynamicRoute)(r.pathname) &&
+								(r.isFallback || (t && !r.isReady)))
+						)
 							return null;
 						try {
 							e = new URL(r.asPath, 'http://f');
@@ -1928,7 +2164,10 @@
 						}
 						return e.pathname;
 					}, [r.asPath, r.isFallback, r.isReady, r.pathname]);
-				return (0, o.jsx)(i.PathnameContext.Provider, { value: s, children: t });
+				return (0, o.jsx)(i.PathnameContext.Provider, {
+					value: s,
+					children: t,
+				});
 			}
 		},
 		3940: (e, t, r) => {
@@ -1976,16 +2215,27 @@
 					let t = '';
 					if ((0, s.isDynamicRoute)(e.pathname) && e.searchParams && r) {
 						let r = (0, n.searchParamsToUrlQuery)(e.searchParams),
-							{ result: i, params: l } = (0, c.interpolateAs)(e.pathname, e.pathname, r);
-						i && (t = (0, o.formatWithValidation)({ pathname: i, hash: e.hash, query: (0, a.omit)(r, l) }));
+							{ result: i, params: l } = (0, c.interpolateAs)(
+								e.pathname,
+								e.pathname,
+								r,
+							);
+						i &&
+							(t = (0, o.formatWithValidation)({
+								pathname: i,
+								hash: e.hash,
+								query: (0, a.omit)(r, l),
+							}));
 					}
-					let i = e.origin === f.origin ? e.href.slice(e.origin.length) : e.href;
+					let i =
+						e.origin === f.origin ? e.href.slice(e.origin.length) : e.href;
 					return r ? [i, t || i] : i;
 				} catch (e) {
 					return r ? [d] : d;
 				}
 			}
-			('function' == typeof t.default || ('object' == typeof t.default && null !== t.default)) &&
+			('function' == typeof t.default ||
+				('object' == typeof t.default && null !== t.default)) &&
 				void 0 === t.default.__esModule &&
 				(Object.defineProperty(t.default, '__esModule', { value: !0 }),
 				Object.assign(t.default, t),
@@ -2005,8 +2255,19 @@
 			function a(e, t, r) {
 				void 0 === r && (r = !0);
 				let a = new URL((0, n.getLocationOrigin)()),
-					i = t ? new URL(t, a) : e.startsWith('.') ? new URL(window.location.href) : a,
-					{ pathname: l, searchParams: u, search: s, hash: c, href: f, origin: d } = new URL(e, i);
+					i = t
+						? new URL(t, a)
+						: e.startsWith('.')
+							? new URL(window.location.href)
+							: a,
+					{
+						pathname: l,
+						searchParams: u,
+						search: s,
+						hash: c,
+						href: f,
+						origin: d,
+					} = new URL(e, i);
 				if (d !== a.origin)
 					throw Object.defineProperty(
 						Error('invariant: invalid relative URL, router received ' + e),
@@ -2039,7 +2300,9 @@
 				let { headManager: t, reduceComponentsToState: r } = e;
 				function i() {
 					if (t && t.mountedInstances) {
-						let o = n.Children.toArray(Array.from(t.mountedInstances).filter(Boolean));
+						let o = n.Children.toArray(
+							Array.from(t.mountedInstances).filter(Boolean),
+						);
 						t.updateHead(r(o, e));
 					}
 				}
@@ -2047,10 +2310,14 @@
 					o(() => {
 						var r;
 						return (
-							null == t || null == (r = t.mountedInstances) || r.add(e.children),
+							null == t ||
+								null == (r = t.mountedInstances) ||
+								r.add(e.children),
 							() => {
 								var r;
-								null == t || null == (r = t.mountedInstances) || r.delete(e.children);
+								null == t ||
+									null == (r = t.mountedInstances) ||
+									r.delete(e.children);
 							}
 						);
 					}),
@@ -2064,9 +2331,13 @@
 					),
 					a(
 						() => (
-							t && t._pendingUpdate && (t._pendingUpdate(), (t._pendingUpdate = null)),
+							t &&
+								t._pendingUpdate &&
+								(t._pendingUpdate(), (t._pendingUpdate = null)),
 							() => {
-								t && t._pendingUpdate && (t._pendingUpdate(), (t._pendingUpdate = null));
+								t &&
+									t._pendingUpdate &&
+									(t._pendingUpdate(), (t._pendingUpdate = null));
 							}
 						),
 					),
@@ -2081,7 +2352,8 @@
 				(self.__next_set_public_path__ = (e) => {
 					r.p = e;
 				}),
-				('function' == typeof t.default || ('object' == typeof t.default && null !== t.default)) &&
+				('function' == typeof t.default ||
+					('object' == typeof t.default && null !== t.default)) &&
 					void 0 === t.default.__esModule &&
 					(Object.defineProperty(t.default, '__esModule', { value: !0 }),
 					Object.assign(t.default, t),
@@ -2091,7 +2363,8 @@
 			'use strict';
 			(Object.defineProperty(t, '__esModule', { value: !0 }),
 				!(function (e, t) {
-					for (var r in t) Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
+					for (var r in t)
+						Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
 				})(t, {
 					default: function () {
 						return g;
@@ -2148,7 +2421,13 @@
 					(a
 						? ((m.innerHTML = a.__html || ''), _())
 						: l
-							? ((m.textContent = 'string' == typeof l ? l : Array.isArray(l) ? l.join('') : ''), _())
+							? ((m.textContent =
+									'string' == typeof l
+										? l
+										: Array.isArray(l)
+											? l.join('')
+											: ''),
+								_())
 							: t && ((m.src = t), f.set(t, g)),
 						(0, s.setAttributesFromProps)(m, e),
 						'worker' === u && m.setAttribute('type', 'text/partytown'),
@@ -2163,7 +2442,10 @@
 									let t = document.head;
 									e.forEach((e) => {
 										let r = document.createElement('link');
-										((r.type = 'text/css'), (r.rel = 'stylesheet'), (r.href = e), t.appendChild(r));
+										((r.type = 'text/css'),
+											(r.rel = 'stylesheet'),
+											(r.href = e),
+											t.appendChild(r));
 									});
 								}
 							})(p),
@@ -2198,7 +2480,13 @@
 						stylesheets: h,
 						..._
 					} = e,
-					{ updateScripts: m, scripts: g, getIsSsr: b, appDir: y, nonce: E } = (0, l.useContext)(u.HeadManagerContext);
+					{
+						updateScripts: m,
+						scripts: g,
+						getIsSsr: b,
+						appDir: y,
+						nonce: E,
+					} = (0, l.useContext)(u.HeadManagerContext);
 				E = _.nonce || E;
 				let P = (0, l.useRef)(!1);
 				(0, l.useEffect)(() => {
@@ -2222,7 +2510,17 @@
 					}, [e, s]),
 					('beforeInteractive' === s || 'worker' === s) &&
 						(m
-							? ((g[s] = (g[s] || []).concat([{ id: t, src: r, onLoad: n, onReady: o, onError: f, ..._, nonce: E }])),
+							? ((g[s] = (g[s] || []).concat([
+									{
+										id: t,
+										src: r,
+										onLoad: n,
+										onReady: o,
+										onError: f,
+										..._,
+										nonce: E,
+									},
+								])),
 								m(g))
 							: b && b()
 								? d.add(t || r)
@@ -2239,11 +2537,15 @@
 						if (!r)
 							return (
 								_.dangerouslySetInnerHTML &&
-									((_.children = _.dangerouslySetInnerHTML.__html), delete _.dangerouslySetInnerHTML),
+									((_.children = _.dangerouslySetInnerHTML.__html),
+									delete _.dangerouslySetInnerHTML),
 								(0, a.jsx)('script', {
 									nonce: E,
 									dangerouslySetInnerHTML: {
-										__html: '(self.__next_s=self.__next_s||[]).push(' + JSON.stringify([0, { ..._, id: t }]) + ')',
+										__html:
+											'(self.__next_s=self.__next_s||[]).push(' +
+											JSON.stringify([0, { ..._, id: t }]) +
+											')',
 									},
 								})
 							);
@@ -2252,13 +2554,21 @@
 								i.default.preload(
 									r,
 									_.integrity
-										? { as: 'script', integrity: _.integrity, nonce: E, crossOrigin: _.crossOrigin }
+										? {
+												as: 'script',
+												integrity: _.integrity,
+												nonce: E,
+												crossOrigin: _.crossOrigin,
+											}
 										: { as: 'script', nonce: E, crossOrigin: _.crossOrigin },
 								),
 								(0, a.jsx)('script', {
 									nonce: E,
 									dangerouslySetInnerHTML: {
-										__html: '(self.__next_s=self.__next_s||[]).push(' + JSON.stringify([r, { ..._, id: t }]) + ')',
+										__html:
+											'(self.__next_s=self.__next_s||[]).push(' +
+											JSON.stringify([r, { ..._, id: t }]) +
+											')',
 									},
 								})
 							);
@@ -2267,7 +2577,12 @@
 						i.default.preload(
 							r,
 							_.integrity
-								? { as: 'script', integrity: _.integrity, nonce: E, crossOrigin: _.crossOrigin }
+								? {
+										as: 'script',
+										integrity: _.integrity,
+										nonce: E,
+										crossOrigin: _.crossOrigin,
+									}
 								: { as: 'script', nonce: E, crossOrigin: _.crossOrigin },
 						);
 				}
@@ -2275,7 +2590,8 @@
 			}
 			Object.defineProperty(m, '__nextScript', { value: !0 });
 			let g = m;
-			('function' == typeof t.default || ('object' == typeof t.default && null !== t.default)) &&
+			('function' == typeof t.default ||
+				('object' == typeof t.default && null !== t.default)) &&
 				void 0 === t.default.__esModule &&
 				(Object.defineProperty(t.default, '__esModule', { value: !0 }),
 				Object.assign(t.default, t),
@@ -2284,7 +2600,11 @@
 		4374: (e, t) => {
 			'use strict';
 			function r(e) {
-				let { ampFirst: t = !1, hybrid: r = !1, hasQuery: n = !1 } = void 0 === e ? {} : e;
+				let {
+					ampFirst: t = !1,
+					hybrid: r = !1,
+					hasQuery: n = !1,
+				} = void 0 === e ? {} : e;
 				return t || (r && n);
 			}
 			(Object.defineProperty(t, '__esModule', { value: !0 }),
@@ -2306,10 +2626,16 @@
 				}),
 				r(9944));
 			let n = function (e) {
-				for (var t = arguments.length, r = Array(t > 1 ? t - 1 : 0), n = 1; n < t; n++) r[n - 1] = arguments[n];
+				for (
+					var t = arguments.length, r = Array(t > 1 ? t - 1 : 0), n = 1;
+					n < t;
+					n++
+				)
+					r[n - 1] = arguments[n];
 				return e;
 			};
-			('function' == typeof t.default || ('object' == typeof t.default && null !== t.default)) &&
+			('function' == typeof t.default ||
+				('object' == typeof t.default && null !== t.default)) &&
 				void 0 === t.default.__esModule &&
 				(Object.defineProperty(t.default, '__esModule', { value: !0 }),
 				Object.assign(t.default, t),
@@ -2319,7 +2645,8 @@
 			'use strict';
 			(Object.defineProperty(t, '__esModule', { value: !0 }),
 				!(function (e, t) {
-					for (var r in t) Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
+					for (var r in t)
+						Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
 				})(t, {
 					getSortedRouteObjects: function () {
 						return o;
@@ -2340,10 +2667,18 @@
 					let t = [...this.children.keys()].sort();
 					(null !== this.slugName && t.splice(t.indexOf('[]'), 1),
 						null !== this.restSlugName && t.splice(t.indexOf('[...]'), 1),
-						null !== this.optionalRestSlugName && t.splice(t.indexOf('[[...]]'), 1));
-					let r = t.map((t) => this.children.get(t)._smoosh('' + e + t + '/')).reduce((e, t) => [...e, ...t], []);
+						null !== this.optionalRestSlugName &&
+							t.splice(t.indexOf('[[...]]'), 1));
+					let r = t
+						.map((t) => this.children.get(t)._smoosh('' + e + t + '/'))
+						.reduce((e, t) => [...e, ...t], []);
 					if (
-						(null !== this.slugName && r.push(...this.children.get('[]')._smoosh(e + '[' + this.slugName + ']/')),
+						(null !== this.slugName &&
+							r.push(
+								...this.children
+									.get('[]')
+									._smoosh(e + '[' + this.slugName + ']/'),
+							),
 						!this.placeholder)
 					) {
 						let t = '/' === e ? '/' : e.slice(0, -1);
@@ -2365,9 +2700,17 @@
 					}
 					return (
 						null !== this.restSlugName &&
-							r.push(...this.children.get('[...]')._smoosh(e + '[...' + this.restSlugName + ']/')),
+							r.push(
+								...this.children
+									.get('[...]')
+									._smoosh(e + '[...' + this.restSlugName + ']/'),
+							),
 						null !== this.optionalRestSlugName &&
-							r.push(...this.children.get('[[...]]')._smoosh(e + '[[...' + this.optionalRestSlugName + ']]/')),
+							r.push(
+								...this.children
+									.get('[[...]]')
+									._smoosh(e + '[[...' + this.optionalRestSlugName + ']]/'),
+							),
 						r
 					);
 				}
@@ -2377,44 +2720,74 @@
 						return;
 					}
 					if (n)
-						throw Object.defineProperty(Error('Catch-all must be the last part of the URL.'), '__NEXT_ERROR_CODE', {
-							value: 'E392',
-							enumerable: !1,
-							configurable: !0,
-						});
+						throw Object.defineProperty(
+							Error('Catch-all must be the last part of the URL.'),
+							'__NEXT_ERROR_CODE',
+							{ value: 'E392', enumerable: !1, configurable: !0 },
+						);
 					let o = e[0];
 					if (o.startsWith('[') && o.endsWith(']')) {
 						let r = o.slice(1, -1),
 							i = !1;
-						if ((r.startsWith('[') && r.endsWith(']') && ((r = r.slice(1, -1)), (i = !0)), r.startsWith('…')))
+						if (
+							(r.startsWith('[') &&
+								r.endsWith(']') &&
+								((r = r.slice(1, -1)), (i = !0)),
+							r.startsWith('…'))
+						)
 							throw Object.defineProperty(
-								Error("Detected a three-dot character ('…') at ('" + r + "'). Did you mean ('...')?"),
+								Error(
+									"Detected a three-dot character ('…') at ('" +
+										r +
+										"'). Did you mean ('...')?",
+								),
 								'__NEXT_ERROR_CODE',
 								{ value: 'E147', enumerable: !1, configurable: !0 },
 							);
-						if ((r.startsWith('...') && ((r = r.substring(3)), (n = !0)), r.startsWith('[') || r.endsWith(']')))
+						if (
+							(r.startsWith('...') && ((r = r.substring(3)), (n = !0)),
+							r.startsWith('[') || r.endsWith(']'))
+						)
 							throw Object.defineProperty(
-								Error("Segment names may not start or end with extra brackets ('" + r + "')."),
+								Error(
+									"Segment names may not start or end with extra brackets ('" +
+										r +
+										"').",
+								),
 								'__NEXT_ERROR_CODE',
 								{ value: 'E421', enumerable: !1, configurable: !0 },
 							);
 						if (r.startsWith('.'))
 							throw Object.defineProperty(
-								Error("Segment names may not start with erroneous periods ('" + r + "')."),
+								Error(
+									"Segment names may not start with erroneous periods ('" +
+										r +
+										"').",
+								),
 								'__NEXT_ERROR_CODE',
 								{ value: 'E288', enumerable: !1, configurable: !0 },
 							);
 						function a(e, r) {
 							if (null !== e && e !== r)
 								throw Object.defineProperty(
-									Error("You cannot use different slug names for the same dynamic path ('" + e + "' !== '" + r + "')."),
+									Error(
+										"You cannot use different slug names for the same dynamic path ('" +
+											e +
+											"' !== '" +
+											r +
+											"').",
+									),
 									'__NEXT_ERROR_CODE',
 									{ value: 'E337', enumerable: !1, configurable: !0 },
 								);
 							(t.forEach((e) => {
 								if (e === r)
 									throw Object.defineProperty(
-										Error('You cannot have the same slug name "' + r + '" repeat within a single dynamic path'),
+										Error(
+											'You cannot have the same slug name "' +
+												r +
+												'" repeat within a single dynamic path',
+										),
 										'__NEXT_ERROR_CODE',
 										{ value: 'E247', enumerable: !1, configurable: !0 },
 									);
@@ -2447,7 +2820,9 @@
 										'__NEXT_ERROR_CODE',
 										{ value: 'E299', enumerable: !1, configurable: !0 },
 									);
-								(a(this.optionalRestSlugName, r), (this.optionalRestSlugName = r), (o = '[[...]]'));
+								(a(this.optionalRestSlugName, r),
+									(this.optionalRestSlugName = r),
+									(o = '[[...]]'));
 							} else {
 								if (null != this.optionalRestSlugName)
 									throw Object.defineProperty(
@@ -2461,19 +2836,26 @@
 										'__NEXT_ERROR_CODE',
 										{ value: 'E300', enumerable: !1, configurable: !0 },
 									);
-								(a(this.restSlugName, r), (this.restSlugName = r), (o = '[...]'));
+								(a(this.restSlugName, r),
+									(this.restSlugName = r),
+									(o = '[...]'));
 							}
 						else {
 							if (i)
 								throw Object.defineProperty(
-									Error('Optional route parameters are not yet supported ("' + e[0] + '").'),
+									Error(
+										'Optional route parameters are not yet supported ("' +
+											e[0] +
+											'").',
+									),
 									'__NEXT_ERROR_CODE',
 									{ value: 'E435', enumerable: !1, configurable: !0 },
 								);
 							(a(this.slugName, r), (this.slugName = r), (o = '[]'));
 						}
 					}
-					(this.children.has(o) || this.children.set(o, new r()), this.children.get(o)._insert(e.slice(1), t, n));
+					(this.children.has(o) || this.children.set(o, new r()),
+						this.children.get(o)._insert(e.slice(1), t, n));
 				}
 				constructor() {
 					((this.placeholder = !0),
@@ -2514,9 +2896,14 @@
 				function t(t) {
 					return (0, n.jsx)(e, { router: (0, o.useRouter)(), ...t });
 				}
-				return ((t.getInitialProps = e.getInitialProps), (t.origGetInitialProps = e.origGetInitialProps), t);
+				return (
+					(t.getInitialProps = e.getInitialProps),
+					(t.origGetInitialProps = e.origGetInitialProps),
+					t
+				);
 			}
-			('function' == typeof t.default || ('object' == typeof t.default && null !== t.default)) &&
+			('function' == typeof t.default ||
+				('object' == typeof t.default && null !== t.default)) &&
 				void 0 === t.default.__esModule &&
 				(Object.defineProperty(t.default, '__esModule', { value: !0 }),
 				Object.assign(t.default, t),
@@ -2526,7 +2913,8 @@
 			'use strict';
 			(Object.defineProperty(t, '__esModule', { value: !0 }),
 				!(function (e, t) {
-					for (var r in t) Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
+					for (var r in t)
+						Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
 				})(t, {
 					getNamedMiddlewareRegex: function () {
 						return _;
@@ -2565,10 +2953,12 @@
 						i = f.match(l);
 					if (e && i && i[2]) {
 						let { key: t, optional: r, repeat: o } = s(i[2]);
-						((n[t] = { pos: u++, repeat: o, optional: r }), c.push('/' + (0, a.escapeStringRegexp)(e) + '([^/]+?)'));
+						((n[t] = { pos: u++, repeat: o, optional: r }),
+							c.push('/' + (0, a.escapeStringRegexp)(e) + '([^/]+?)'));
 					} else if (i && i[2]) {
 						let { key: e, repeat: t, optional: o } = s(i[2]);
-						((n[e] = { pos: u++, repeat: t, optional: o }), r && i[1] && c.push('/' + (0, a.escapeStringRegexp)(i[1])));
+						((n[e] = { pos: u++, repeat: t, optional: o }),
+							r && i[1] && c.push('/' + (0, a.escapeStringRegexp)(i[1])));
 						let l = t ? (o ? '(?:/(.+?))?' : '/(.+?)') : '/([^/]+?)';
 						(r && i[1] && (l = l.substring(1)), c.push(l));
 					} else c.push('/' + (0, a.escapeStringRegexp)(f));
@@ -2600,12 +2990,19 @@
 					p = c.replace(/\W/g, '');
 				l && (p = '' + l + p);
 				let h = !1;
-				((0 === p.length || p.length > 30) && (h = !0), isNaN(parseInt(p.slice(0, 1))) || (h = !0), h && (p = n()));
+				((0 === p.length || p.length > 30) && (h = !0),
+					isNaN(parseInt(p.slice(0, 1))) || (h = !0),
+					h && (p = n()));
 				let _ = p in i;
 				l ? (i[p] = '' + l + c) : (i[p] = c);
 				let m = r ? (0, a.escapeStringRegexp)(r) : '';
 				return (
-					(t = _ && u ? '\\k<' + p + '>' : d ? '(?<' + p + '>.+?)' : '(?<' + p + '>[^/]+?)'),
+					(t =
+						_ && u
+							? '\\k<' + p + '>'
+							: d
+								? '(?<' + p + '>.+?)'
+								: '(?<' + p + '>[^/]+?)'),
 					f ? '(?:/' + m + t + ')?' : '/' + m + t
 				);
 			}
@@ -2616,7 +3013,9 @@
 						() => {
 							let e = '',
 								t = ++c;
-							for (; t > 0; ) ((e += String.fromCharCode(97 + ((t - 1) % 26))), (t = Math.floor((t - 1) / 26)));
+							for (; t > 0; )
+								((e += String.fromCharCode(97 + ((t - 1) % 26))),
+									(t = Math.floor((t - 1) / 26)));
 							return e;
 						}),
 					p = {},
@@ -2720,7 +3119,9 @@
 							(function (e) {
 								let t = 0;
 								for (let r = 0; r < e.length; r++)
-									((t = Math.imul(t ^ e.charCodeAt(r), 0x5bd1e995)), (t ^= t >>> 13), (t = Math.imul(t, 0x5bd1e995)));
+									((t = Math.imul(t ^ e.charCodeAt(r), 0x5bd1e995)),
+										(t ^= t >>> 13),
+										(t = Math.imul(t, 0x5bd1e995)));
 								return t >>> 0;
 							})('' + e + r) % this.numBits;
 						t.push(n);
@@ -2730,7 +3131,9 @@
 				constructor(e, t = 1e-4) {
 					((this.numItems = e),
 						(this.errorRate = t),
-						(this.numBits = Math.ceil(-(e * Math.log(t)) / (Math.log(2) * Math.log(2)))),
+						(this.numBits = Math.ceil(
+							-(e * Math.log(t)) / (Math.log(2) * Math.log(2)),
+						)),
 						(this.numHashes = Math.ceil((this.numBits / e) * Math.log(2))),
 						(this.bitArray = Array(this.numBits).fill(0)));
 				}
@@ -2769,7 +3172,8 @@
 			'use strict';
 			(Object.defineProperty(t, '__esModule', { value: !0 }),
 				!(function (e, t) {
-					for (var r in t) Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
+					for (var r in t)
+						Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
 				})(t, {
 					default: function () {
 						return o;
@@ -2780,7 +3184,9 @@
 				}));
 			let n = r(8563);
 			function o(e) {
-				return 'object' == typeof e && null !== e && 'name' in e && 'message' in e;
+				return (
+					'object' == typeof e && null !== e && 'name' in e && 'message' in e
+				);
 			}
 			function a(e) {
 				return o(e)
@@ -2809,7 +3215,8 @@
 			'use strict';
 			(Object.defineProperty(t, '__esModule', { value: !0 }),
 				!(function (e, t) {
-					for (var r in t) Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
+					for (var r in t)
+						Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
 				})(t, {
 					default: function () {
 						return _;
@@ -2829,7 +3236,17 @@
 			function f(e) {
 				void 0 === e && (e = !1);
 				let t = [(0, a.jsx)('meta', { charSet: 'utf-8' }, 'charset')];
-				return (e || t.push((0, a.jsx)('meta', { name: 'viewport', content: 'width=device-width' }, 'viewport')), t);
+				return (
+					e ||
+						t.push(
+							(0, a.jsx)(
+								'meta',
+								{ name: 'viewport', content: 'width=device-width' },
+								'viewport',
+							),
+						),
+					t
+				);
 			}
 			function d(e, t) {
 				return 'string' == typeof t || 'number' == typeof t
@@ -2837,7 +3254,10 @@
 					: t.type === i.default.Fragment
 						? e.concat(
 								i.default.Children.toArray(t.props.children).reduce(
-									(e, t) => ('string' == typeof t || 'number' == typeof t ? e : e.concat(t)),
+									(e, t) =>
+										'string' == typeof t || 'number' == typeof t
+											? e
+											: e.concat(t),
 									[],
 								),
 							)
@@ -2860,7 +3280,11 @@
 							return (o) => {
 								let a = !0,
 									i = !1;
-								if (o.key && 'number' != typeof o.key && o.key.indexOf('$') > 0) {
+								if (
+									o.key &&
+									'number' != typeof o.key &&
+									o.key.indexOf('$') > 0
+								) {
 									i = !0;
 									let t = o.key.slice(o.key.indexOf('$') + 1);
 									e.has(t) ? (a = !1) : e.add(t);
@@ -2878,7 +3302,9 @@
 												else {
 													let e = o.props[t],
 														r = n[t] || new Set();
-													('name' !== t || !i) && r.has(e) ? (a = !1) : (r.add(e), (n[t] = r));
+													('name' !== t || !i) && r.has(e)
+														? (a = !1)
+														: (r.add(e), (n[t] = r));
 												}
 										}
 								}
@@ -2903,7 +3329,8 @@
 					children: t,
 				});
 			};
-			('function' == typeof t.default || ('object' == typeof t.default && null !== t.default)) &&
+			('function' == typeof t.default ||
+				('object' == typeof t.default && null !== t.default)) &&
 				void 0 === t.default.__esModule &&
 				(Object.defineProperty(t.default, '__esModule', { value: !0 }),
 				Object.assign(t.default, t),
@@ -2932,7 +3359,8 @@
 			'use strict';
 			(Object.defineProperty(t, '__esModule', { value: !0 }),
 				!(function (e, t) {
-					for (var r in t) Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
+					for (var r in t)
+						Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
 				})(t, {
 					formatUrl: function () {
 						return a;
@@ -2956,8 +3384,12 @@
 				((t = t ? encodeURIComponent(t).replace(/%3A/i, ':') + '@' : ''),
 					e.host
 						? (s = t + e.host)
-						: r && ((s = t + (~r.indexOf(':') ? '[' + r + ']' : r)), e.port && (s += ':' + e.port)),
-					u && 'object' == typeof u && (u = String(n.urlQueryToSearchParams(u))));
+						: r &&
+							((s = t + (~r.indexOf(':') ? '[' + r + ']' : r)),
+							e.port && (s += ':' + e.port)),
+					u &&
+						'object' == typeof u &&
+						(u = String(n.urlQueryToSearchParams(u))));
 				let c = e.search || (u && '?' + u) || '';
 				return (
 					a && !a.endsWith(':') && (a += ':'),
@@ -2966,7 +3398,12 @@
 						: s || (s = ''),
 					l && '#' !== l[0] && (l = '#' + l),
 					c && '?' !== c[0] && (c = '?' + c),
-					'' + a + s + (i = i.replace(/[?#]/g, encodeURIComponent)) + (c = c.replace('#', '%23')) + l
+					'' +
+						a +
+						s +
+						(i = i.replace(/[?#]/g, encodeURIComponent)) +
+						(c = c.replace('#', '%23')) +
+						l
 				);
 			}
 			let i = [
@@ -3003,7 +3440,8 @@
 			'use strict';
 			(Object.defineProperty(t, '__esModule', { value: !0 }),
 				!(function (e, t) {
-					for (var r in t) Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
+					for (var r in t)
+						Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
 				})(t, {
 					createKey: function () {
 						return G;
@@ -3086,7 +3524,11 @@
 					? e
 					: (t.includes(r) ||
 							t.some((t) => {
-								if ((0, p.isDynamicRoute)(t) && (0, m.getRouteRegex)(t).re.test(r)) return ((e = t), !0);
+								if (
+									(0, p.isDynamicRoute)(t) &&
+									(0, m.getRouteRegex)(t).re.test(r)
+								)
+									return ((e = t), !0);
 							}),
 						(0, a.removeTrailingSlash)(e));
 			}
@@ -3094,29 +3536,50 @@
 				if (!(await D(e)) || !e.fetchData) return null;
 				let t = await e.fetchData(),
 					r = await (function (e, t, r) {
-						let n = { basePath: r.router.basePath, i18n: { locales: r.router.locales }, trailingSlash: !0 },
+						let n = {
+								basePath: r.router.basePath,
+								i18n: { locales: r.router.locales },
+								trailingSlash: !0,
+							},
 							o = t.headers.get('x-nextjs-rewrite'),
 							l = o || t.headers.get('x-nextjs-matched-path'),
 							u = t.headers.get(M.MATCHED_PATH_HEADER);
 						if (
-							(!u || l || u.includes('__next_data_catchall') || u.includes('/_error') || u.includes('/404') || (l = u),
+							(!u ||
+								l ||
+								u.includes('__next_data_catchall') ||
+								u.includes('/_error') ||
+								u.includes('/404') ||
+								(l = u),
 							l)
 						) {
 							if (l.startsWith('/')) {
 								let t = (0, h.parseRelativeUrl)(l),
-									u = (0, T.getNextPathnameInfo)(t.pathname, { nextConfig: n, parseData: !0 }),
+									u = (0, T.getNextPathnameInfo)(t.pathname, {
+										nextConfig: n,
+										parseData: !0,
+									}),
 									s = (0, a.removeTrailingSlash)(u.pathname);
-								return Promise.all([r.router.pageLoader.getPageList(), (0, i.getClientBuildManifest)()]).then((a) => {
+								return Promise.all([
+									r.router.pageLoader.getPageList(),
+									(0, i.getClientBuildManifest)(),
+								]).then((a) => {
 									let [i, { __rewrites: l }] = a,
 										f = (0, y.addLocale)(u.pathname, u.locale);
 									if (
 										(0, p.isDynamicRoute)(f) ||
-										(!o && i.includes((0, c.normalizeLocalePath)((0, P.removeBasePath)(f), r.router.locales).pathname))
+										(!o &&
+											i.includes(
+												(0, c.normalizeLocalePath)(
+													(0, P.removeBasePath)(f),
+													r.router.locales,
+												).pathname,
+											))
 									) {
-										let r = (0, T.getNextPathnameInfo)((0, h.parseRelativeUrl)(e).pathname, {
-											nextConfig: n,
-											parseData: !0,
-										});
+										let r = (0, T.getNextPathnameInfo)(
+											(0, h.parseRelativeUrl)(e).pathname,
+											{ nextConfig: n, parseData: !0 },
+										);
 										t.pathname = f = (0, v.addBasePath)(r.pathname);
 									}
 									if (!i.includes(s)) {
@@ -3125,7 +3588,13 @@
 									}
 									let d = i.includes(s)
 										? s
-										: F((0, c.normalizeLocalePath)((0, P.removeBasePath)(t.pathname), r.router.locales).pathname, i);
+										: F(
+												(0, c.normalizeLocalePath)(
+													(0, P.removeBasePath)(t.pathname),
+													r.router.locales,
+												).pathname,
+												i,
+											);
 									if ((0, p.isDynamicRoute)(d)) {
 										let e = (0, _.getRouteMatcher)((0, m.getRouteRegex)(d))(f);
 										Object.assign(t.query, e || {});
@@ -3139,7 +3608,10 @@
 								destination:
 									'' +
 									(0, j.formatNextPathnameInfo)({
-										...(0, T.getNextPathnameInfo)(t.pathname, { nextConfig: n, parseData: !0 }),
+										...(0, T.getNextPathnameInfo)(t.pathname, {
+											nextConfig: n,
+											parseData: !0,
+										}),
 										defaultLocale: r.router.defaultLocale,
 										buildId: '',
 									}) +
@@ -3152,7 +3624,10 @@
 							if (s.startsWith('/')) {
 								let e = (0, b.parsePath)(s),
 									t = (0, j.formatNextPathnameInfo)({
-										...(0, T.getNextPathnameInfo)(e.pathname, { nextConfig: n, parseData: !0 }),
+										...(0, T.getNextPathnameInfo)(e.pathname, {
+											nextConfig: n,
+											parseData: !0,
+										}),
 										defaultLocale: r.router.defaultLocale,
 										buildId: '',
 									});
@@ -3162,7 +3637,10 @@
 									newUrl: '' + t + e.query + e.hash,
 								});
 							}
-							return Promise.resolve({ type: 'redirect-external', destination: s });
+							return Promise.resolve({
+								type: 'redirect-external',
+								destination: s,
+							});
 						}
 						return Promise.resolve({ type: 'next' });
 					})(t.dataHref, t.response, e);
@@ -3203,7 +3681,9 @@
 								credentials: 'same-origin',
 								method: n.method || 'GET',
 								headers: Object.assign({}, n.headers, { 'x-nextjs-data': '1' }),
-							}).then((o) => (!o.ok && r > 1 && o.status >= 500 ? e(t, r - 1, n) : o));
+							}).then((o) =>
+								!o.ok && r > 1 && o.status >= 500 ? e(t, r - 1, n) : o,
+							);
 						})(t, a ? 3 : 1, {
 							headers: Object.assign(
 								{},
@@ -3215,32 +3695,65 @@
 						})
 							.then((r) =>
 								r.ok && (null == e ? void 0 : e.method) === 'HEAD'
-									? { dataHref: t, response: r, text: '', json: {}, cacheKey: f }
+									? {
+											dataHref: t,
+											response: r,
+											text: '',
+											json: {},
+											cacheKey: f,
+										}
 									: r.text().then((e) => {
 											if (!r.ok) {
 												if (o && [301, 302, 307, 308].includes(r.status))
-													return { dataHref: t, response: r, text: e, json: {}, cacheKey: f };
+													return {
+														dataHref: t,
+														response: r,
+														text: e,
+														json: {},
+														cacheKey: f,
+													};
 												if (404 === r.status) {
 													var n;
 													if (null == (n = X(e)) ? void 0 : n.notFound)
-														return { dataHref: t, json: { notFound: H }, response: r, text: e, cacheKey: f };
+														return {
+															dataHref: t,
+															json: { notFound: H },
+															response: r,
+															text: e,
+															cacheKey: f,
+														};
 												}
-												let l = Object.defineProperty(Error('Failed to load static props'), '__NEXT_ERROR_CODE', {
-													value: 'E124',
-													enumerable: !1,
-													configurable: !0,
-												});
+												let l = Object.defineProperty(
+													Error('Failed to load static props'),
+													'__NEXT_ERROR_CODE',
+													{ value: 'E124', enumerable: !1, configurable: !0 },
+												);
 												throw (a || (0, i.markAssetError)(l), l);
 											}
-											return { dataHref: t, json: l ? X(e) : null, response: r, text: e, cacheKey: f };
+											return {
+												dataHref: t,
+												json: l ? X(e) : null,
+												response: r,
+												text: e,
+												cacheKey: f,
+											};
 										}),
 							)
-							.then((e) => ((u && 'no-cache' !== e.response.headers.get('x-middleware-cache')) || delete r[f], e))
+							.then(
+								(e) => (
+									(u &&
+										'no-cache' !==
+											e.response.headers.get('x-middleware-cache')) ||
+										delete r[f],
+									e
+								),
+							)
 							.catch((e) => {
 								throw (
 									c || delete r[f],
 									('Failed to fetch' === e.message ||
-										'NetworkError when attempting to fetch resource.' === e.message ||
+										'NetworkError when attempting to fetch resource.' ===
+											e.message ||
 										'Load failed' === e.message) &&
 										(0, i.markAssetError)(e),
 									e
@@ -3249,7 +3762,11 @@
 					};
 				return c && u
 					? d({}).then(
-							(e) => ('no-cache' !== e.response.headers.get('x-middleware-cache') && (r[f] = Promise.resolve(e)), e),
+							(e) => (
+								'no-cache' !== e.response.headers.get('x-middleware-cache') &&
+									(r[f] = Promise.resolve(e)),
+								e
+							),
 						)
 					: void 0 !== r[f]
 						? r[f]
@@ -3262,7 +3779,12 @@
 				let { url: t, router: r } = e;
 				if (t === (0, v.addBasePath)((0, y.addLocale)(r.asPath, r.locale)))
 					throw Object.defineProperty(
-						Error('Invariant: attempted to hard navigate to the same URL ' + t + ' ' + location.href),
+						Error(
+							'Invariant: attempted to hard navigate to the same URL ' +
+								t +
+								' ' +
+								location.href,
+						),
 						'__NEXT_ERROR_CODE',
 						{ value: 'E282', enumerable: !1, configurable: !0 },
 					);
@@ -3297,10 +3819,18 @@
 					window.history.forward();
 				}
 				push(e, t, r) {
-					return (void 0 === r && (r = {}), ({ url: e, as: t } = k(this, e, t)), this.change('pushState', e, t, r));
+					return (
+						void 0 === r && (r = {}),
+						({ url: e, as: t } = k(this, e, t)),
+						this.change('pushState', e, t, r)
+					);
 				}
 				replace(e, t, r) {
-					return (void 0 === r && (r = {}), ({ url: e, as: t } = k(this, e, t)), this.change('replaceState', e, t, r));
+					return (
+						void 0 === r && (r = {}),
+						({ url: e, as: t } = k(this, e, t)),
+						this.change('replaceState', e, t, r)
+					);
 				}
 				async _bfl(e, t, n, o) {
 					{
@@ -3309,29 +3839,42 @@
 								a,
 								{ BloomFilter: l } = r(4716);
 							try {
-								({ __routerFilterStatic: t, __routerFilterDynamic: a } = await (0, i.getClientBuildManifest)());
+								({ __routerFilterStatic: t, __routerFilterDynamic: a } =
+									await (0, i.getClientBuildManifest)());
 							} catch (t) {
 								if ((console.error(t), o)) return !0;
 								return (
 									q({
-										url: (0, v.addBasePath)((0, y.addLocale)(e, n || this.locale, this.defaultLocale)),
+										url: (0, v.addBasePath)(
+											(0, y.addLocale)(e, n || this.locale, this.defaultLocale),
+										),
 										router: this,
 									}),
 									new Promise(() => {})
 								);
 							}
 							((null == t ? void 0 : t.numHashes) &&
-								((this._bfl_s = new l(t.numItems, t.errorRate)), this._bfl_s.import(t)),
+								((this._bfl_s = new l(t.numItems, t.errorRate)),
+								this._bfl_s.import(t)),
 								(null == a ? void 0 : a.numHashes) &&
-									((this._bfl_d = new l(a.numItems, a.errorRate)), this._bfl_d.import(a)));
+									((this._bfl_d = new l(a.numItems, a.errorRate)),
+									this._bfl_d.import(a)));
 						}
 						let c = !1,
 							f = !1;
 						for (let { as: r, allowMatchCurrent: i } of [{ as: e }, { as: t }])
 							if (r) {
-								let t = (0, a.removeTrailingSlash)(new URL(r, 'http://n').pathname),
+								let t = (0, a.removeTrailingSlash)(
+										new URL(r, 'http://n').pathname,
+									),
 									d = (0, v.addBasePath)((0, y.addLocale)(t, n || this.locale));
-								if (i || t !== (0, a.removeTrailingSlash)(new URL(this.asPath, 'http://n').pathname)) {
+								if (
+									i ||
+									t !==
+										(0, a.removeTrailingSlash)(
+											new URL(this.asPath, 'http://n').pathname,
+										)
+								) {
 									var l, u, s;
 									for (let e of ((c =
 										c ||
@@ -3341,7 +3884,10 @@
 										let t = e.split('/');
 										for (let e = 0; !f && e < t.length + 1; e++) {
 											let r = t.slice(0, e).join('/');
-											if (r && (null == (s = this._bfl_d) ? void 0 : s.contains(r))) {
+											if (
+												r &&
+												(null == (s = this._bfl_d) ? void 0 : s.contains(r))
+											) {
 												f = !0;
 												break;
 											}
@@ -3351,7 +3897,13 @@
 										if (o) return !0;
 										return (
 											q({
-												url: (0, v.addBasePath)((0, y.addLocale)(e, n || this.locale, this.defaultLocale)),
+												url: (0, v.addBasePath)(
+													(0, y.addLocale)(
+														e,
+														n || this.locale,
+														this.defaultLocale,
+													),
+												),
 												router: this,
 											}),
 											new Promise(() => {})
@@ -3368,7 +3920,10 @@
 					if (!(0, w.isLocalURL)(t)) return (q({ url: t, router: this }), !1);
 					let B = 1 === n._h;
 					B || n.shallow || (await this._bfl(r, void 0, n.locale));
-					let X = B || n._shouldResolveHref || (0, b.parsePath)(t).pathname === (0, b.parsePath)(r).pathname,
+					let X =
+							B ||
+							n._shouldResolveHref ||
+							(0, b.parsePath)(t).pathname === (0, b.parsePath)(r).pathname,
 						W = { ...this.state },
 						G = !0 !== this.isReady;
 					this.isReady = !0;
@@ -3380,11 +3935,21 @@
 						Q = { shallow: K };
 					(this._inFlightRoute &&
 						this.clc &&
-						(V || z.events.emit('routeChangeError', L(), this._inFlightRoute, Q), this.clc(), (this.clc = null)),
+						(V ||
+							z.events.emit('routeChangeError', L(), this._inFlightRoute, Q),
+						this.clc(),
+						(this.clc = null)),
 						(r = (0, v.addBasePath)(
-							(0, y.addLocale)((0, R.hasBasePath)(r) ? (0, P.removeBasePath)(r) : r, n.locale, this.defaultLocale),
+							(0, y.addLocale)(
+								(0, R.hasBasePath)(r) ? (0, P.removeBasePath)(r) : r,
+								n.locale,
+								this.defaultLocale,
+							),
 						)));
-					let J = (0, E.removeLocale)((0, R.hasBasePath)(r) ? (0, P.removeBasePath)(r) : r, W.locale);
+					let J = (0, E.removeLocale)(
+						(0, R.hasBasePath)(r) ? (0, P.removeBasePath)(r) : r,
+						W.locale,
+					);
 					this._inFlightRoute = r;
 					let Z = Y !== W.locale;
 					if (!B && this.onlyAHashChange(J) && !Z) {
@@ -3395,7 +3960,12 @@
 						try {
 							await this.set(W, this.components[W.route], null);
 						} catch (e) {
-							throw ((0, u.default)(e) && e.cancelled && z.events.emit('routeChangeError', e, J, Q), e);
+							throw (
+								(0, u.default)(e) &&
+									e.cancelled &&
+									z.events.emit('routeChangeError', e, J, Q),
+								e
+							);
 						}
 						return (z.events.emit('hashChangeComplete', r, Q), !0);
 					}
@@ -3420,9 +3990,12 @@
 					let ei = !!(
 							ea &&
 							eo !== ea &&
-							(!(0, p.isDynamicRoute)(eo) || !(0, _.getRouteMatcher)((0, m.getRouteRegex)(eo))(ea))
+							(!(0, p.isDynamicRoute)(eo) ||
+								!(0, _.getRouteMatcher)((0, m.getRouteRegex)(eo))(ea))
 						),
-						el = !n.shallow && (await D({ asPath: r, locale: W.locale, router: this }));
+						el =
+							!n.shallow &&
+							(await D({ asPath: r, locale: W.locale, router: this }));
 					if (
 						(B && el && (X = !1),
 						X &&
@@ -3436,7 +4009,8 @@
 						!(0, w.isLocalURL)(r))
 					)
 						return (q({ url: r, router: this }), !1);
-					((en = (0, E.removeLocale)((0, P.removeBasePath)(en), W.locale)), (eo = (0, a.removeTrailingSlash)(et)));
+					((en = (0, E.removeLocale)((0, P.removeBasePath)(en), W.locale)),
+						(eo = (0, a.removeTrailingSlash)(et)));
 					let eu = !1;
 					if ((0, p.isDynamicRoute)(eo)) {
 						let e = (0, h.parseRelativeUrl)(en),
@@ -3448,11 +4022,16 @@
 						if (eu && (!a || i.result))
 							a
 								? (r = (0, g.formatWithValidation)(
-										Object.assign({}, e, { pathname: i.result, query: (0, I.omit)(er, i.params) }),
+										Object.assign({}, e, {
+											pathname: i.result,
+											query: (0, I.omit)(er, i.params),
+										}),
 									))
 								: Object.assign(er, eu);
 						else {
-							let e = Object.keys(o.groups).filter((e) => !er[e] && !o.groups[e].optional);
+							let e = Object.keys(o.groups).filter(
+								(e) => !er[e] && !o.groups[e].optional,
+							);
 							if (e.length > 0 && !el)
 								throw Object.defineProperty(
 									Error(
@@ -3462,9 +4041,15 @@
 												') value is missing query values (' +
 												e.join(', ') +
 												') to be interpolated properly. '
-											: 'The provided `as` value (' + n + ') is incompatible with the `href` value (' + eo + '). ') +
+											: 'The provided `as` value (' +
+												n +
+												') is incompatible with the `href` value (' +
+												eo +
+												'). ') +
 											'Read more: https://nextjs.org/docs/messages/' +
-											(a ? 'href-interpolation-failed' : 'incompatible-href-as'),
+											(a
+												? 'href-interpolation-failed'
+												: 'incompatible-href-as'),
 									),
 									'__NEXT_ERROR_CODE',
 									{ value: 'E344', enumerable: !1, configurable: !0 },
@@ -3489,11 +4074,20 @@
 							isMiddlewareRewrite: ei,
 						});
 						if (
-							(B || n.shallow || (await this._bfl(r, 'resolvedAs' in a ? a.resolvedAs : void 0, W.locale)),
+							(B ||
+								n.shallow ||
+								(await this._bfl(
+									r,
+									'resolvedAs' in a ? a.resolvedAs : void 0,
+									W.locale,
+								)),
 							'route' in a && el)
 						) {
-							((eo = et = a.route || eo), Q.shallow || (er = Object.assign({}, a.query || {}, er)));
-							let e = (0, R.hasBasePath)(ee.pathname) ? (0, P.removeBasePath)(ee.pathname) : ee.pathname;
+							((eo = et = a.route || eo),
+								Q.shallow || (er = Object.assign({}, a.query || {}, er)));
+							let e = (0, R.hasBasePath)(ee.pathname)
+								? (0, P.removeBasePath)(ee.pathname)
+								: ee.pathname;
 							if (
 								(eu &&
 									et !== e &&
@@ -3505,16 +4099,29 @@
 								let e =
 									!Q.shallow && a.resolvedAs
 										? a.resolvedAs
-										: (0, v.addBasePath)((0, y.addLocale)(new URL(r, location.href).pathname, W.locale), !0);
+										: (0, v.addBasePath)(
+												(0, y.addLocale)(
+													new URL(r, location.href).pathname,
+													W.locale,
+												),
+												!0,
+											);
 								(0, R.hasBasePath)(e) && (e = (0, P.removeBasePath)(e));
 								let t = (0, m.getRouteRegex)(et),
-									n = (0, _.getRouteMatcher)(t)(new URL(e, location.href).pathname);
+									n = (0, _.getRouteMatcher)(t)(
+										new URL(e, location.href).pathname,
+									);
 								n && Object.assign(er, n);
 							}
 						}
 						if ('type' in a)
-							if ('redirect-internal' === a.type) return this.change(e, a.newUrl, a.newAs, n);
-							else return (q({ url: a.destination, router: this }), new Promise(() => {}));
+							if ('redirect-internal' === a.type)
+								return this.change(e, a.newUrl, a.newAs, n);
+							else
+								return (
+									q({ url: a.destination, router: this }),
+									new Promise(() => {})
+								);
 						let i = a.Component;
 						if (
 							(i &&
@@ -3527,7 +4134,10 @@
 							if (a.props.pageProps && a.props.pageProps.__N_REDIRECT) {
 								n.locale = !1;
 								let t = a.props.pageProps.__N_REDIRECT;
-								if (t.startsWith('/') && !1 !== a.props.pageProps.__N_REDIRECT_BASE_PATH) {
+								if (
+									t.startsWith('/') &&
+									!1 !== a.props.pageProps.__N_REDIRECT_BASE_PATH
+								) {
 									let r = (0, h.parseRelativeUrl)(t);
 									r.pathname = F(r.pathname, M);
 									let { url: o, as: a } = k(this, t, t);
@@ -3535,7 +4145,9 @@
 								}
 								return (q({ url: t, router: this }), new Promise(() => {}));
 							}
-							if (((W.isPreview = !!a.props.__N_PREVIEW), a.props.notFound === H)) {
+							if (
+								((W.isPreview = !!a.props.__N_PREVIEW), a.props.notFound === H)
+							) {
 								let e;
 								try {
 									(await this.fetchComponent('/404'), (e = '/404'));
@@ -3556,22 +4168,32 @@
 									})),
 									'type' in a)
 								)
-									throw Object.defineProperty(Error('Unexpected middleware effect on /404'), '__NEXT_ERROR_CODE', {
-										value: 'E158',
-										enumerable: !1,
-										configurable: !0,
-									});
+									throw Object.defineProperty(
+										Error('Unexpected middleware effect on /404'),
+										'__NEXT_ERROR_CODE',
+										{ value: 'E158', enumerable: !1, configurable: !0 },
+									);
 							}
 						}
 						B &&
 							'/_error' === this.pathname &&
-							(null == (f = self.__NEXT_DATA__.props) || null == (c = f.pageProps) ? void 0 : c.statusCode) === 500 &&
+							(null == (f = self.__NEXT_DATA__.props) ||
+							null == (c = f.pageProps)
+								? void 0
+								: c.statusCode) === 500 &&
 							(null == (O = a.props) ? void 0 : O.pageProps) &&
 							(a.props.pageProps.statusCode = 500);
 						let s = n.shallow && W.route === (null != (S = a.route) ? S : eo),
 							d = null != (T = n.scroll) ? T : !B && !s,
 							g = null != o ? o : d ? { x: 0, y: 0 } : null,
-							b = { ...W, route: eo, pathname: et, query: er, asPath: J, isFallback: !1 };
+							b = {
+								...W,
+								route: eo,
+								pathname: et,
+								query: er,
+								asPath: J,
+								isFallback: !1,
+							};
 						if (B && es) {
 							if (
 								((a = await this.getRouteInfo({
@@ -3593,20 +4215,34 @@
 									{ value: 'E225', enumerable: !1, configurable: !0 },
 								);
 							'/_error' === this.pathname &&
-								(null == (C = self.__NEXT_DATA__.props) || null == (j = C.pageProps) ? void 0 : j.statusCode) === 500 &&
+								(null == (C = self.__NEXT_DATA__.props) ||
+								null == (j = C.pageProps)
+									? void 0
+									: j.statusCode) === 500 &&
 								(null == (N = a.props) ? void 0 : N.pageProps) &&
 								(a.props.pageProps.statusCode = 500);
 							try {
 								await this.set(b, a, g);
 							} catch (e) {
-								throw ((0, u.default)(e) && e.cancelled && z.events.emit('routeChangeError', e, J, Q), e);
+								throw (
+									(0, u.default)(e) &&
+										e.cancelled &&
+										z.events.emit('routeChangeError', e, J, Q),
+									e
+								);
 							}
 							return !0;
 						}
 						if (
 							(z.events.emit('beforeHistoryChange', r, Q),
 							this.changeState(e, t, r, n),
-							!(B && !g && !G && !Z && (0, A.compareRouterStates)(b, this.state)))
+							!(
+								B &&
+								!g &&
+								!G &&
+								!Z &&
+								(0, A.compareRouterStates)(b, this.state)
+							))
 						) {
 							try {
 								await this.set(b, a, g);
@@ -3614,8 +4250,13 @@
 								if (e.cancelled) a.error = a.error || e;
 								else throw e;
 							}
-							if (a.error) throw (B || z.events.emit('routeChangeError', a.error, J, Q), a.error);
-							(B || z.events.emit('routeChangeComplete', r, Q), d && /#.+$/.test(r) && this.scrollToHash(r));
+							if (a.error)
+								throw (
+									B || z.events.emit('routeChangeError', a.error, J, Q),
+									a.error
+								);
+							(B || z.events.emit('routeChangeComplete', r, Q),
+								d && /#.+$/.test(r) && this.scrollToHash(r));
 						}
 						return !0;
 					} catch (e) {
@@ -3628,7 +4269,13 @@
 						('pushState' !== e || (0, d.getURL)() !== r) &&
 							((this._shallow = n.shallow),
 							window.history[e](
-								{ url: t, as: r, options: n, __N: !0, key: (this._key = 'pushState' !== e ? this._key : G()) },
+								{
+									url: t,
+									as: r,
+									options: n,
+									__N: !0,
+									key: (this._key = 'pushState' !== e ? this._key : G()),
+								},
 								'',
 								r,
 							)));
@@ -3636,17 +4283,27 @@
 				async handleRouteInfoError(e, t, r, n, o, a) {
 					if (e.cancelled) throw e;
 					if ((0, i.isAssetError)(e) || a)
-						throw (z.events.emit('routeChangeError', e, n, o), q({ url: n, router: this }), L());
+						throw (
+							z.events.emit('routeChangeError', e, n, o),
+							q({ url: n, router: this }),
+							L()
+						);
 					console.error(e);
 					try {
 						let n,
-							{ page: o, styleSheets: a } = await this.fetchComponent('/_error'),
+							{ page: o, styleSheets: a } =
+								await this.fetchComponent('/_error'),
 							i = { props: n, Component: o, styleSheets: a, err: e, error: e };
 						if (!i.props)
 							try {
-								i.props = await this.getInitialProps(o, { err: e, pathname: t, query: r });
+								i.props = await this.getInitialProps(o, {
+									err: e,
+									pathname: t,
+									query: r,
+								});
 							} catch (e) {
-								(console.error('Error in error page `getInitialProps`: ', e), (i.props = {}));
+								(console.error('Error in error page `getInitialProps`: ', e),
+									(i.props = {}));
 							}
 						return i;
 					} catch (e) {
@@ -3709,19 +4366,32 @@
 							T =
 								h && !_
 									? null
-									: await B({ fetchData: () => W(O), asPath: m ? '/404' : i, locale: s, router: this }).catch((e) => {
+									: await B({
+											fetchData: () => W(O),
+											asPath: m ? '/404' : i,
+											locale: s,
+											router: this,
+										}).catch((e) => {
 											if (h) return null;
 											throw e;
 										});
 						if (
 							(T && ('/_error' === r || '/404' === r) && (T.effect = void 0),
-							h && (T ? (T.json = self.__NEXT_DATA__.props) : (T = { json: self.__NEXT_DATA__.props })),
+							h &&
+								(T
+									? (T.json = self.__NEXT_DATA__.props)
+									: (T = { json: self.__NEXT_DATA__.props })),
 							t(),
-							(null == T || null == (y = T.effect) ? void 0 : y.type) === 'redirect-internal' ||
-								(null == T || null == (E = T.effect) ? void 0 : E.type) === 'redirect-external')
+							(null == T || null == (y = T.effect) ? void 0 : y.type) ===
+								'redirect-internal' ||
+								(null == T || null == (E = T.effect) ? void 0 : E.type) ===
+									'redirect-external')
 						)
 							return T.effect;
-						if ((null == T || null == (v = T.effect) ? void 0 : v.type) === 'rewrite') {
+						if (
+							(null == T || null == (v = T.effect) ? void 0 : v.type) ===
+							'rewrite'
+						) {
 							let t = (0, a.removeTrailingSlash)(T.effect.resolvedHref),
 								o = await this.pageLoader.getPageList();
 							if (
@@ -3730,14 +4400,18 @@
 								(r = T.effect.resolvedHref),
 								(n = { ...n, ...T.effect.parsedAs.query }),
 								(i = (0, P.removeBasePath)(
-									(0, c.normalizeLocalePath)(T.effect.parsedAs.pathname, this.locales).pathname,
+									(0, c.normalizeLocalePath)(
+										T.effect.parsedAs.pathname,
+										this.locales,
+									).pathname,
 								)),
 								(e = this.components[b]),
 								l.shallow && e && this.route === b && !f)
 							)
 								return { ...e, route: b };
 						}
-						if ((0, S.isAPIRoute)(b)) return (q({ url: o, router: this }), new Promise(() => {}));
+						if ((0, S.isAPIRoute)(b))
+							return (q({ url: o, router: this }), new Promise(() => {}));
 						let j =
 								u ||
 								(await this.fetchComponent(b).then((e) => ({
@@ -3746,16 +4420,25 @@
 									__N_SSG: e.mod.__N_SSG,
 									__N_SSP: e.mod.__N_SSP,
 								}))),
-							A = null == T || null == (R = T.response) ? void 0 : R.headers.get('x-middleware-skip'),
+							A =
+								null == T || null == (R = T.response)
+									? void 0
+									: R.headers.get('x-middleware-skip'),
 							w = j.__N_SSG || j.__N_SSP;
-						A && (null == T ? void 0 : T.dataHref) && delete this.sdc[T.dataHref];
+						A &&
+							(null == T ? void 0 : T.dataHref) &&
+							delete this.sdc[T.dataHref];
 						let { props: C, cacheKey: I } = await this._getData(async () => {
 							if (w) {
-								if ((null == T ? void 0 : T.json) && !A) return { cacheKey: T.cacheKey, props: T.json };
+								if ((null == T ? void 0 : T.json) && !A)
+									return { cacheKey: T.cacheKey, props: T.json };
 								let e = (null == T ? void 0 : T.dataHref)
 										? T.dataHref
 										: this.pageLoader.getDataHref({
-												href: (0, g.formatWithValidation)({ pathname: r, query: n }),
+												href: (0, g.formatWithValidation)({
+													pathname: r,
+													query: n,
+												}),
 												asPath: i,
 												locale: s,
 											}),
@@ -3787,9 +4470,13 @@
 							this.isPreview ||
 								!j.__N_SSG ||
 								h ||
-								W(Object.assign({}, O, { isBackground: !0, persistCache: !1, inflightCache: this.sbc })).catch(
-									() => {},
-								),
+								W(
+									Object.assign({}, O, {
+										isBackground: !0,
+										persistCache: !1,
+										inflightCache: this.sbc,
+									}),
+								).catch(() => {}),
 							(C.pageProps = Object.assign({}, C.pageProps)),
 							(j.props = C),
 							(j.route = b),
@@ -3799,11 +4486,20 @@
 							j
 						);
 					} catch (e) {
-						return this.handleRouteInfoError((0, u.getProperError)(e), r, n, o, l);
+						return this.handleRouteInfoError(
+							(0, u.getProperError)(e),
+							r,
+							n,
+							o,
+							l,
+						);
 					}
 				}
 				set(e, t, r) {
-					return ((this.state = e), this.sub(t, this.components['/_app'].Component, r));
+					return (
+						(this.state = e),
+						this.sub(t, this.components['/_app'].Component, r)
+					);
 				}
 				beforePopState(e) {
 					this._bps = e;
@@ -3832,7 +4528,12 @@
 					return this.asPath !== e;
 				}
 				async prefetch(e, t, r) {
-					if ((void 0 === t && (t = e), void 0 === r && (r = {}), (0, C.isBot)(window.navigator.userAgent))) return;
+					if (
+						(void 0 === t && (t = e),
+						void 0 === r && (r = {}),
+						(0, C.isBot)(window.navigator.userAgent))
+					)
+						return;
 					let n = (0, h.parseRelativeUrl)(e),
 						o = n.pathname,
 						{ pathname: i, query: l } = n,
@@ -3847,7 +4548,9 @@
 							(n.pathname = i),
 							Object.assign(
 								l,
-								(0, _.getRouteMatcher)((0, m.getRouteRegex)(n.pathname))((0, b.parsePath)(t).pathname) || {},
+								(0, _.getRouteMatcher)((0, m.getRouteRegex)(n.pathname))(
+									(0, b.parsePath)(t).pathname,
+								) || {},
 							),
 							d || (e = (0, g.formatWithValidation)(n))));
 					let y = await B({
@@ -3881,7 +4584,8 @@
 					)
 						return;
 					let E = (0, a.removeTrailingSlash)(i);
-					((await this._bfl(t, c, r.locale, !0)) && (this.components[o] = { __appRouter: !0 }),
+					((await this._bfl(t, c, r.locale, !0)) &&
+						(this.components[o] = { __appRouter: !0 }),
 						await Promise.all([
 							this.pageLoader._isSsg(E).then(
 								(t) =>
@@ -3891,13 +4595,18 @@
 											? null == y
 												? void 0
 												: y.dataHref
-											: this.pageLoader.getDataHref({ href: e, asPath: c, locale: f }),
+											: this.pageLoader.getDataHref({
+													href: e,
+													asPath: c,
+													locale: f,
+												}),
 										isServerRender: !1,
 										parseJSON: !0,
 										inflightCache: this.sdc,
 										persistCache: !this.isPreview,
 										isPrefetch: !0,
-										unstable_skipClientCache: r.unstable_skipClientCache || (r.priority && !0),
+										unstable_skipClientCache:
+											r.unstable_skipClientCache || (r.priority && !0),
 									})
 										.then(() => !1)
 										.catch(() => !1),
@@ -3923,11 +4632,11 @@
 						(this.clc = r),
 						e().then((e) => {
 							if ((r === this.clc && (this.clc = null), t)) {
-								let e = Object.defineProperty(Error('Loading initial props cancelled'), '__NEXT_ERROR_CODE', {
-									value: 'E405',
-									enumerable: !1,
-									configurable: !0,
-								});
+								let e = Object.defineProperty(
+									Error('Loading initial props cancelled'),
+									'__NEXT_ERROR_CODE',
+									{ value: 'E405', enumerable: !1, configurable: !0 },
+								);
 								throw ((e.cancelled = !0), e);
 							}
 							return e;
@@ -3937,7 +4646,15 @@
 				getInitialProps(e, t) {
 					let { Component: r } = this.components['/_app'],
 						n = this._wrapApp(r);
-					return ((t.AppTree = n), (0, d.loadGetInitialProps)(r, { AppTree: n, Component: e, router: this, ctx: t }));
+					return (
+						(t.AppTree = n),
+						(0, d.loadGetInitialProps)(r, {
+							AppTree: n,
+							Component: e,
+							router: this,
+							ctx: t,
+						})
+					);
 				}
 				get route() {
 					return this.state.route;
@@ -3993,17 +4710,26 @@
 								let { pathname: e, query: t } = this;
 								this.changeState(
 									'replaceState',
-									(0, g.formatWithValidation)({ pathname: (0, v.addBasePath)(e), query: t }),
+									(0, g.formatWithValidation)({
+										pathname: (0, v.addBasePath)(e),
+										query: t,
+									}),
 									(0, d.getURL)(),
 								);
 								return;
 							}
 							if (n.__NA) return void window.location.reload();
-							if (!n.__N || (r && this.locale === n.options.locale && n.as === this.asPath)) return;
+							if (
+								!n.__N ||
+								(r && this.locale === n.options.locale && n.as === this.asPath)
+							)
+								return;
 							let { url: o, as: a, options: i, key: l } = n;
 							this._key = l;
 							let { pathname: u } = (0, h.parseRelativeUrl)(o);
-							(!this.isSsr || a !== (0, v.addBasePath)(this.asPath) || u !== (0, v.addBasePath)(this.pathname)) &&
+							(!this.isSsr ||
+								a !== (0, v.addBasePath)(this.asPath) ||
+								u !== (0, v.addBasePath)(this.pathname)) &&
 								(!this._bps || this._bps(n)) &&
 								this.change(
 									'replaceState',
@@ -4060,12 +4786,21 @@
 					) {
 						let n = { locale: _ },
 							o = (0, d.getURL)();
-						this._initialMatchesMiddlewarePromise = D({ router: this, locale: _, asPath: o }).then(
+						this._initialMatchesMiddlewarePromise = D({
+							router: this,
+							locale: _,
+							asPath: o,
+						}).then(
 							(a) => (
 								(n._shouldResolveHref = r !== e),
 								this.changeState(
 									'replaceState',
-									a ? o : (0, g.formatWithValidation)({ pathname: (0, v.addBasePath)(e), query: t }),
+									a
+										? o
+										: (0, g.formatWithValidation)({
+												pathname: (0, v.addBasePath)(e),
+												query: t,
+											}),
 									o,
 									n,
 								),
@@ -4095,7 +4830,8 @@
 			'use strict';
 			(Object.defineProperty(t, '__esModule', { value: !0 }),
 				!(function (e, t) {
-					for (var r in t) Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
+					for (var r in t)
+						Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
 				})(t, {
 					REDIRECT_ERROR_CODE: function () {
 						return o;
@@ -4113,16 +4849,27 @@
 				return ((e.push = 'push'), (e.replace = 'replace'), e);
 			})({});
 			function i(e) {
-				if ('object' != typeof e || null === e || !('digest' in e) || 'string' != typeof e.digest) return !1;
+				if (
+					'object' != typeof e ||
+					null === e ||
+					!('digest' in e) ||
+					'string' != typeof e.digest
+				)
+					return !1;
 				let t = e.digest.split(';'),
 					[r, a] = t,
 					i = t.slice(2, -2).join(';'),
 					l = Number(t.at(-2));
 				return (
-					r === o && ('replace' === a || 'push' === a) && 'string' == typeof i && !isNaN(l) && l in n.RedirectStatusCode
+					r === o &&
+					('replace' === a || 'push' === a) &&
+					'string' == typeof i &&
+					!isNaN(l) &&
+					l in n.RedirectStatusCode
 				);
 			}
-			('function' == typeof t.default || ('object' == typeof t.default && null !== t.default)) &&
+			('function' == typeof t.default ||
+				('object' == typeof t.default && null !== t.default)) &&
 				void 0 === t.default.__esModule &&
 				(Object.defineProperty(t.default, '__esModule', { value: !0 }),
 				Object.assign(t.default, t),
@@ -4142,9 +4889,15 @@
 				a = r(7649),
 				i = r(7504);
 			function l(e) {
-				let t = (0, i.addLocale)(e.pathname, e.locale, e.buildId ? void 0 : e.defaultLocale, e.ignorePrefix);
+				let t = (0, i.addLocale)(
+					e.pathname,
+					e.locale,
+					e.buildId ? void 0 : e.defaultLocale,
+					e.ignorePrefix,
+				);
 				return (
-					(e.buildId || !e.trailingSlash) && (t = (0, n.removeTrailingSlash)(t)),
+					(e.buildId || !e.trailingSlash) &&
+						(t = (0, n.removeTrailingSlash)(t)),
 					e.buildId &&
 						(t = (0, a.addPathSuffix)(
 							(0, o.addPathPrefix)(t, '/_next/data/' + e.buildId),
@@ -4176,7 +4929,8 @@
 			}
 			(Object.defineProperty(t, '__esModule', { value: !0 }),
 				!(function (e, t) {
-					for (var r in t) Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
+					for (var r in t)
+						Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
 				})(t, {
 					DEFAULT_SEGMENT_KEY: function () {
 						return i;
@@ -4209,9 +4963,15 @@
 				r(2460));
 			let n = '/openbanking.vn';
 			function o(e) {
-				return (0 === n.length || (e = e.slice(n.length)).startsWith('/') || (e = '/' + e), e);
+				return (
+					0 === n.length ||
+						(e = e.slice(n.length)).startsWith('/') ||
+						(e = '/' + e),
+					e
+				);
 			}
-			('function' == typeof t.default || ('object' == typeof t.default && null !== t.default)) &&
+			('function' == typeof t.default ||
+				('object' == typeof t.default && null !== t.default)) &&
 				void 0 === t.default.__esModule &&
 				(Object.defineProperty(t.default, '__esModule', { value: !0 }),
 				Object.assign(t.default, t),
@@ -4234,7 +4994,8 @@
 			'use strict';
 			(Object.defineProperty(t, '__esModule', { value: !0 }),
 				!(function (e, t) {
-					for (var r in t) Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
+					for (var r in t)
+						Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
 				})(t, {
 					createRouteLoader: function () {
 						return m;
@@ -4284,7 +5045,8 @@
 					try {
 						return (
 							(e = document.createElement('link')),
-							(!!window.MSInputMethodContext && !!document.documentMode) || e.relList.supports('prefetch')
+							(!!window.MSInputMethodContext && !!document.documentMode) ||
+								e.relList.supports('prefetch')
 						);
 					} catch (e) {
 						return !1;
@@ -4318,11 +5080,11 @@
 							}),
 							3800,
 							s(
-								Object.defineProperty(Error('Failed to load client build manifest'), '__NEXT_ERROR_CODE', {
-									value: 'E273',
-									enumerable: !1,
-									configurable: !0,
-								}),
+								Object.defineProperty(
+									Error('Failed to load client build manifest'),
+									'__NEXT_ERROR_CODE',
+									{ value: 'E273', enumerable: !1, configurable: !0 },
+								),
 							),
 						);
 			}
@@ -4330,15 +5092,17 @@
 				return h().then((r) => {
 					if (!(t in r))
 						throw s(
-							Object.defineProperty(Error('Failed to lookup route: ' + t), '__NEXT_ERROR_CODE', {
-								value: 'E446',
-								enumerable: !1,
-								configurable: !0,
-							}),
+							Object.defineProperty(
+								Error('Failed to lookup route: ' + t),
+								'__NEXT_ERROR_CODE',
+								{ value: 'E446', enumerable: !1, configurable: !0 },
+							),
 						);
 					let o = r[t].map((t) => e + '/_next/' + (0, i.encodeURIPath)(t));
 					return {
-						scripts: o.filter((e) => e.endsWith('.js')).map((e) => (0, n.__unsafeCreateTrustedScriptURL)(e) + d()),
+						scripts: o
+							.filter((e) => e.endsWith('.js'))
+							.map((e) => (0, n.__unsafeCreateTrustedScriptURL)(e) + d()),
 						css: o.filter((e) => e.endsWith('.css')).map((e) => e + d()),
 					};
 				});
@@ -4363,11 +5127,15 @@
 												(t.onerror = () =>
 													n(
 														s(
-															Object.defineProperty(Error('Failed to load script: ' + e), '__NEXT_ERROR_CODE', {
-																value: 'E74',
-																enumerable: !1,
-																configurable: !0,
-															}),
+															Object.defineProperty(
+																Error('Failed to load script: ' + e),
+																'__NEXT_ERROR_CODE',
+																{
+																	value: 'E74',
+																	enumerable: !1,
+																	configurable: !0,
+																},
+															),
 														),
 													)),
 												(t.crossOrigin = void 0),
@@ -4387,11 +5155,11 @@
 								(t = fetch(e, { credentials: 'same-origin' })
 									.then((t) => {
 										if (!t.ok)
-											throw Object.defineProperty(Error('Failed to load stylesheet: ' + e), '__NEXT_ERROR_CODE', {
-												value: 'E189',
-												enumerable: !1,
-												configurable: !0,
-											});
+											throw Object.defineProperty(
+												Error('Failed to load stylesheet: ' + e),
+												'__NEXT_ERROR_CODE',
+												{ value: 'E189', enumerable: !1, configurable: !0 },
+											);
 										return t.text().then((t) => ({ href: e, content: t }));
 									})
 									.catch((e) => {
@@ -4414,7 +5182,9 @@
 							: Promise.resolve(void 0)
 						).then((r) => {
 							let n = t.get(e);
-							n && 'resolve' in n ? r && (t.set(e, r), n.resolve(r)) : (r ? t.set(e, r) : t.delete(e), a.delete(e));
+							n && 'resolve' in n
+								? r && (t.set(e, r), n.resolve(r))
+								: (r ? t.set(e, r) : t.delete(e), a.delete(e));
 						});
 					},
 					loadRoute(r, n) {
@@ -4424,16 +5194,24 @@
 								_(e, r)
 									.then((e) => {
 										let { scripts: n, css: o } = e;
-										return Promise.all([t.has(r) ? [] : Promise.all(n.map(i)), Promise.all(o.map(u))]);
+										return Promise.all([
+											t.has(r) ? [] : Promise.all(n.map(i)),
+											Promise.all(o.map(u)),
+										]);
 									})
-									.then((e) => this.whenEntrypoint(r).then((t) => ({ entrypoint: t, styles: e[1] }))),
+									.then((e) =>
+										this.whenEntrypoint(r).then((t) => ({
+											entrypoint: t,
+											styles: e[1],
+										})),
+									),
 								3800,
 								s(
-									Object.defineProperty(Error('Route did not complete loading: ' + r), '__NEXT_ERROR_CODE', {
-										value: 'E12',
-										enumerable: !1,
-										configurable: !0,
-									}),
+									Object.defineProperty(
+										Error('Route did not complete loading: ' + r),
+										'__NEXT_ERROR_CODE',
+										{ value: 'E12', enumerable: !1, configurable: !0 },
+									),
 								),
 							)
 								.then((e) => {
@@ -4450,7 +5228,8 @@
 					},
 					prefetch(t) {
 						let r;
-						return (r = navigator.connection) && (r.saveData || /2g/.test(r.effectiveType))
+						return (r = navigator.connection) &&
+							(r.saveData || /2g/.test(r.effectiveType))
 							? Promise.resolve()
 							: _(e, t)
 									.then((e) =>
@@ -4479,11 +5258,15 @@
 																	(n.onerror = () =>
 																		o(
 																			s(
-																				Object.defineProperty(Error('Failed to prefetch: ' + t), '__NEXT_ERROR_CODE', {
-																					value: 'E268',
-																					enumerable: !1,
-																					configurable: !0,
-																				}),
+																				Object.defineProperty(
+																					Error('Failed to prefetch: ' + t),
+																					'__NEXT_ERROR_CODE',
+																					{
+																						value: 'E268',
+																						enumerable: !1,
+																						configurable: !0,
+																					},
+																				),
 																			),
 																		)),
 																	(n.href = t),
@@ -4495,13 +5278,16 @@
 										),
 									)
 									.then(() => {
-										(0, o.requestIdleCallback)(() => this.loadRoute(t, !0).catch(() => {}));
+										(0, o.requestIdleCallback)(() =>
+											this.loadRoute(t, !0).catch(() => {}),
+										);
 									})
 									.catch(() => {});
 					},
 				};
 			}
-			('function' == typeof t.default || ('object' == typeof t.default && null !== t.default)) &&
+			('function' == typeof t.default ||
+				('object' == typeof t.default && null !== t.default)) &&
 				void 0 === t.default.__esModule &&
 				(Object.defineProperty(t.default, '__esModule', { value: !0 }),
 				Object.assign(t.default, t),
@@ -4522,7 +5308,8 @@
 					: (e) => {
 							globalThis.console.error(e);
 						};
-			('function' == typeof t.default || ('object' == typeof t.default && null !== t.default)) &&
+			('function' == typeof t.default ||
+				('object' == typeof t.default && null !== t.default)) &&
 				void 0 === t.default.__esModule &&
 				(Object.defineProperty(t.default, '__esModule', { value: !0 }),
 				Object.assign(t.default, t),
@@ -4542,7 +5329,8 @@
 				(0, n.initialize)({})
 					.then(() => (0, n.hydrate)())
 					.catch(console.error),
-				('function' == typeof t.default || ('object' == typeof t.default && null !== t.default)) &&
+				('function' == typeof t.default ||
+					('object' == typeof t.default && null !== t.default)) &&
 					void 0 === t.default.__esModule &&
 					(Object.defineProperty(t.default, '__esModule', { value: !0 }),
 					Object.assign(t.default, t),
@@ -4568,7 +5356,8 @@
 			'use strict';
 			(Object.defineProperty(t, '__esModule', { value: !0 }),
 				!(function (e, t) {
-					for (var r in t) Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
+					for (var r in t)
+						Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
 				})(t, {
 					RouteAnnouncer: function () {
 						return u;
@@ -4605,7 +5394,13 @@
 								else {
 									var t;
 									let n = document.querySelector('h1');
-									r((null != (t = null == n ? void 0 : n.innerText) ? t : null == n ? void 0 : n.textContent) || e);
+									r(
+										(null != (t = null == n ? void 0 : n.innerText)
+											? t
+											: null == n
+												? void 0
+												: n.textContent) || e,
+									);
 								}
 						}, [e]),
 						(0, o.jsx)('p', {
@@ -4618,7 +5413,8 @@
 					);
 				},
 				s = u;
-			('function' == typeof t.default || ('object' == typeof t.default && null !== t.default)) &&
+			('function' == typeof t.default ||
+				('object' == typeof t.default && null !== t.default)) &&
 				void 0 === t.default.__esModule &&
 				(Object.defineProperty(t.default, '__esModule', { value: !0 }),
 				Object.assign(t.default, t),
@@ -4656,7 +5452,8 @@
 						return n;
 					},
 				}),
-				('function' == typeof t.default || ('object' == typeof t.default && null !== t.default)) &&
+				('function' == typeof t.default ||
+					('object' == typeof t.default && null !== t.default)) &&
 					void 0 === t.default.__esModule &&
 					(Object.defineProperty(t.default, '__esModule', { value: !0 }),
 					Object.assign(t.default, t),
@@ -4686,7 +5483,8 @@
 					},
 				}),
 				r(7529),
-				('function' == typeof t.default || ('object' == typeof t.default && null !== t.default)) &&
+				('function' == typeof t.default ||
+					('object' == typeof t.default && null !== t.default)) &&
 					void 0 === t.default.__esModule &&
 					(Object.defineProperty(t.default, '__esModule', { value: !0 }),
 					Object.assign(t.default, t),
@@ -4720,7 +5518,8 @@
 			}
 			let s = {
 				error: {
-					fontFamily: 'system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"',
+					fontFamily:
+						'system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"',
 					height: '100vh',
 					textAlign: 'center',
 					display: 'flex',
@@ -4749,7 +5548,9 @@
 						children: [
 							(0, o.jsx)(i.default, {
 								children: (0, o.jsx)('title', {
-									children: e ? e + ': ' + r : 'Application error: a client-side exception has occurred',
+									children: e
+										? e + ': ' + r
+										: 'Application error: a client-side exception has occurred',
 								}),
 							}),
 							(0, o.jsxs)('div', {
@@ -4764,7 +5565,13 @@
 													: ''),
 										},
 									}),
-									e ? (0, o.jsx)('h1', { className: 'next-error-h1', style: s.h1, children: e }) : null,
+									e
+										? (0, o.jsx)('h1', {
+												className: 'next-error-h1',
+												style: s.h1,
+												children: e,
+											})
+										: null,
 									(0, o.jsx)('div', {
 										style: s.wrap,
 										children: (0, o.jsxs)('h2', {
@@ -4777,7 +5584,12 @@
 																'Application error: a client-side exception has occurred',
 																' ',
 																!!this.props.hostname &&
-																	(0, o.jsxs)(o.Fragment, { children: ['while loading ', this.props.hostname] }),
+																	(0, o.jsxs)(o.Fragment, {
+																		children: [
+																			'while loading ',
+																			this.props.hostname,
+																		],
+																	}),
 																' ',
 																'(see the browser console for more information)',
 															],
@@ -4795,7 +5607,8 @@
 			((c.displayName = 'ErrorPage'),
 				(c.getInitialProps = u),
 				(c.origGetInitialProps = u),
-				('function' == typeof t.default || ('object' == typeof t.default && null !== t.default)) &&
+				('function' == typeof t.default ||
+					('object' == typeof t.default && null !== t.default)) &&
 					void 0 === t.default.__esModule &&
 					(Object.defineProperty(t.default, '__esModule', { value: !0 }),
 					Object.assign(t.default, t),
@@ -4828,7 +5641,13 @@
 							n && (o = (t ? '' : '/') + '[' + o + ']'),
 							r && !Array.isArray(t) && (t = [t]),
 							(n || e in u) &&
-								(a = a.replace(o, r ? t.map((e) => encodeURIComponent(e)).join('/') : encodeURIComponent(t)) || '/')
+								(a =
+									a.replace(
+										o,
+										r
+											? t.map((e) => encodeURIComponent(e)).join('/')
+											: encodeURIComponent(t),
+									) || '/')
 						);
 					}) || (a = ''),
 					{ params: s, result: a }
@@ -4849,7 +5668,9 @@
 			function a(e, t, r, a) {
 				if (!t || t === r) return e;
 				let i = e.toLowerCase();
-				return !a && ((0, o.pathHasPrefix)(i, '/api') || (0, o.pathHasPrefix)(i, '/' + t.toLowerCase()))
+				return !a &&
+					((0, o.pathHasPrefix)(i, '/api') ||
+						(0, o.pathHasPrefix)(i, '/' + t.toLowerCase()))
 					? e
 					: (0, n.addPathPrefix)(e, '/' + t);
 			}
@@ -4880,7 +5701,8 @@
 			'use strict';
 			(Object.defineProperty(t, '__esModule', { value: !0 }),
 				!(function (e, t) {
-					for (var r in t) Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
+					for (var r in t)
+						Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
 				})(t, {
 					HTTPAccessErrorStatus: function () {
 						return r;
@@ -4902,7 +5724,13 @@
 				n = new Set(Object.values(r)),
 				o = 'NEXT_HTTP_ERROR_FALLBACK';
 			function a(e) {
-				if ('object' != typeof e || null === e || !('digest' in e) || 'string' != typeof e.digest) return !1;
+				if (
+					'object' != typeof e ||
+					null === e ||
+					!('digest' in e) ||
+					'string' != typeof e.digest
+				)
+					return !1;
 				let [t, r] = e.digest.split(';');
 				return t === o && n.has(Number(r));
 			}
@@ -4921,7 +5749,8 @@
 						return;
 				}
 			}
-			('function' == typeof t.default || ('object' == typeof t.default && null !== t.default)) &&
+			('function' == typeof t.default ||
+				('object' == typeof t.default && null !== t.default)) &&
 				void 0 === t.default.__esModule &&
 				(Object.defineProperty(t.default, '__esModule', { value: !0 }),
 				Object.assign(t.default, t),
@@ -4947,7 +5776,8 @@
 			'use strict';
 			(Object.defineProperty(t, '__esModule', { value: !0 }),
 				!(function (e, t) {
-					for (var r in t) Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
+					for (var r in t)
+						Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
 				})(t, {
 					ACTION_SUFFIX: function () {
 						return f;
@@ -5148,16 +5978,22 @@
 				k = 'private-next-rsc-action-client-wrapper',
 				F =
 					"You can not have a '_next' folder inside of your public folder. This conflicts with the internal '/_next' route. https://nextjs.org/docs/messages/public-next-folder-conflict",
-				B = 'You can not use getInitialProps with getStaticProps. To use SSG, please remove your getInitialProps',
-				H = 'You can not use getInitialProps with getServerSideProps. Please remove getInitialProps.',
+				B =
+					'You can not use getInitialProps with getStaticProps. To use SSG, please remove your getInitialProps',
+				H =
+					'You can not use getInitialProps with getServerSideProps. Please remove getInitialProps.',
 				X =
 					'You can not use getStaticProps or getStaticPaths with getServerSideProps. To use SSG, please remove getServerSideProps',
-				W = 'can not have getInitialProps/getServerSideProps, https://nextjs.org/docs/messages/404-get-initial-props',
+				W =
+					'can not have getInitialProps/getServerSideProps, https://nextjs.org/docs/messages/404-get-initial-props',
 				G =
 					'pages with `getServerSideProps` can not be exported. See more info here: https://nextjs.org/docs/messages/gssp-export',
-				q = 'Your `getStaticProps` function did not return an object. Did you forget to add a `return`?',
-				V = 'Your `getServerSideProps` function did not return an object. Did you forget to add a `return`?',
-				z = 'The `unstable_revalidate` property is available for general use.\nPlease use `revalidate` instead.',
+				q =
+					'Your `getStaticProps` function did not return an object. Did you forget to add a `return`?',
+				V =
+					'Your `getServerSideProps` function did not return an object. Did you forget to add a `return`?',
+				z =
+					'The `unstable_revalidate` property is available for general use.\nPlease use `revalidate` instead.',
 				Y =
 					"can not be attached to a page's component and must be exported from the page. See more info here: https://nextjs.org/docs/messages/gssp-component-member",
 				K =
@@ -5165,7 +6001,11 @@
 				$ =
 					'Pages with `fallback` enabled in `getStaticPaths` can not be exported. See more info here: https://nextjs.org/docs/messages/ssg-fallback-true-export',
 				Q = ['app', 'pages', 'components', 'lib', 'src'],
-				J = { edge: 'edge', experimentalEdge: 'experimental-edge', nodejs: 'nodejs' },
+				J = {
+					edge: 'edge',
+					experimentalEdge: 'experimental-edge',
+					nodejs: 'nodejs',
+				},
 				Z = {
 					shared: 'shared',
 					reactServerComponents: 'rsc',
@@ -5185,7 +6025,12 @@
 					...Z,
 					GROUP: {
 						builtinReact: [Z.reactServerComponents, Z.actionBrowser],
-						serverOnly: [Z.reactServerComponents, Z.actionBrowser, Z.instrument, Z.middleware],
+						serverOnly: [
+							Z.reactServerComponents,
+							Z.actionBrowser,
+							Z.instrument,
+							Z.middleware,
+						],
 						neutralTarget: [Z.apiNode, Z.apiEdge],
 						clientOnly: [Z.serverSideRendering, Z.appPagesBrowser],
 						bundled: [
@@ -5197,7 +6042,12 @@
 							Z.instrument,
 							Z.middleware,
 						],
-						appPages: [Z.reactServerComponents, Z.serverSideRendering, Z.appPagesBrowser, Z.actionBrowser],
+						appPages: [
+							Z.reactServerComponents,
+							Z.serverSideRendering,
+							Z.appPagesBrowser,
+							Z.actionBrowser,
+						],
 					},
 				},
 				et = {
@@ -5223,7 +6073,8 @@
 			let r;
 			(Object.defineProperty(t, '__esModule', { value: !0 }),
 				!(function (e, t) {
-					for (var r in t) Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
+					for (var r in t)
+						Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
 				})(t, {
 					default: function () {
 						return n;
@@ -5273,7 +6124,8 @@
 			}
 			((u.origGetInitialProps = l),
 				(u.getInitialProps = l),
-				('function' == typeof t.default || ('object' == typeof t.default && null !== t.default)) &&
+				('function' == typeof t.default ||
+					('object' == typeof t.default && null !== t.default)) &&
 					void 0 === t.default.__esModule &&
 					(Object.defineProperty(t.default, '__esModule', { value: !0 }),
 					Object.assign(t.default, t),
@@ -5291,7 +6143,8 @@
 			}
 			(Object.defineProperty(t, '__esModule', { value: !0 }),
 				!(function (e, t) {
-					for (var r in t) Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
+					for (var r in t)
+						Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
 				})(t, {
 					getObjectClassLabel: function () {
 						return r;
@@ -5307,12 +6160,20 @@
 				let t = {};
 				for (let [r, n] of e.entries()) {
 					let e = t[r];
-					void 0 === e ? (t[r] = n) : Array.isArray(e) ? e.push(n) : (t[r] = [e, n]);
+					void 0 === e
+						? (t[r] = n)
+						: Array.isArray(e)
+							? e.push(n)
+							: (t[r] = [e, n]);
 				}
 				return t;
 			}
 			function n(e) {
-				return 'string' == typeof e ? e : ('number' != typeof e || isNaN(e)) && 'boolean' != typeof e ? '' : String(e);
+				return 'string' == typeof e
+					? e
+					: ('number' != typeof e || isNaN(e)) && 'boolean' != typeof e
+						? ''
+						: String(e);
 			}
 			function o(e) {
 				let t = new URLSearchParams();
@@ -5322,7 +6183,12 @@
 				return t;
 			}
 			function a(e) {
-				for (var t = arguments.length, r = Array(t > 1 ? t - 1 : 0), n = 1; n < t; n++) r[n - 1] = arguments[n];
+				for (
+					var t = arguments.length, r = Array(t > 1 ? t - 1 : 0), n = 1;
+					n < t;
+					n++
+				)
+					r[n - 1] = arguments[n];
 				for (let t of r) {
 					for (let r of t.keys()) e.delete(r);
 					for (let [r, n] of t.entries()) e.append(r, n);
@@ -5331,7 +6197,8 @@
 			}
 			(Object.defineProperty(t, '__esModule', { value: !0 }),
 				!(function (e, t) {
-					for (var r in t) Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
+					for (var r in t)
+						Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
 				})(t, {
 					assign: function () {
 						return a;
@@ -5356,9 +6223,12 @@
 			let n = r(6584),
 				o = r(9944);
 			function a(e, t) {
-				return (0, o.normalizePathTrailingSlash)((0, n.addPathPrefix)(e, '/openbanking.vn'));
+				return (0, o.normalizePathTrailingSlash)(
+					(0, n.addPathPrefix)(e, '/openbanking.vn'),
+				);
 			}
-			('function' == typeof t.default || ('object' == typeof t.default && null !== t.default)) &&
+			('function' == typeof t.default ||
+				('object' == typeof t.default && null !== t.default)) &&
 				void 0 === t.default.__esModule &&
 				(Object.defineProperty(t.default, '__esModule', { value: !0 }),
 				Object.assign(t.default, t),
@@ -5367,7 +6237,11 @@
 		8750: (e, t) => {
 			'use strict';
 			function r(e, t) {
-				return (void 0 === t && (t = ''), ('/' === e ? '/index' : /^\/index(\/|$)/.test(e) ? '/index' + e : e) + t);
+				return (
+					void 0 === t && (t = ''),
+					('/' === e ? '/index' : /^\/index(\/|$)/.test(e) ? '/index' + e : e) +
+						t
+				);
 			}
 			(Object.defineProperty(t, '__esModule', { value: !0 }),
 				Object.defineProperty(t, 'default', {
@@ -5391,13 +6265,21 @@
 				a = r(9713);
 			function i(e, t) {
 				var r, i;
-				let { basePath: l, i18n: u, trailingSlash: s } = null != (r = t.nextConfig) ? r : {},
+				let {
+						basePath: l,
+						i18n: u,
+						trailingSlash: s,
+					} = null != (r = t.nextConfig) ? r : {},
 					c = { pathname: e, trailingSlash: '/' !== e ? e.endsWith('/') : s };
 				l &&
 					(0, a.pathHasPrefix)(c.pathname, l) &&
-					((c.pathname = (0, o.removePathPrefix)(c.pathname, l)), (c.basePath = l));
+					((c.pathname = (0, o.removePathPrefix)(c.pathname, l)),
+					(c.basePath = l));
 				let f = c.pathname;
-				if (c.pathname.startsWith('/_next/data/') && c.pathname.endsWith('.json')) {
+				if (
+					c.pathname.startsWith('/_next/data/') &&
+					c.pathname.endsWith('.json')
+				) {
 					let e = c.pathname
 						.replace(/^\/_next\/data\//, '')
 						.replace(/\.json$/, '')
@@ -5414,8 +6296,9 @@
 						(c.pathname = null != (i = e.pathname) ? i : c.pathname),
 						!e.detectedLocale &&
 							c.buildId &&
-							(e = t.i18nProvider ? t.i18nProvider.analyze(f) : (0, n.normalizeLocalePath)(f, u.locales))
-								.detectedLocale &&
+							(e = t.i18nProvider
+								? t.i18nProvider.analyze(f)
+								: (0, n.normalizeLocalePath)(f, u.locales)).detectedLocale &&
 							(c.locale = e.detectedLocale));
 				}
 				return c;
@@ -5446,7 +6329,8 @@
 			}
 			function o(e, t) {
 				if (!t && e && e.__esModule) return e;
-				if (null === e || ('object' != typeof e && 'function' != typeof e)) return { default: e };
+				if (null === e || ('object' != typeof e && 'function' != typeof e))
+					return { default: e };
 				var r = n(t);
 				if (r && r.has(e)) return r.get(e);
 				var o = { __proto__: null },
@@ -5454,7 +6338,9 @@
 				for (var i in e)
 					if ('default' !== i && Object.prototype.hasOwnProperty.call(e, i)) {
 						var l = a ? Object.getOwnPropertyDescriptor(e, i) : null;
-						l && (l.get || l.set) ? Object.defineProperty(o, i, l) : (o[i] = e[i]);
+						l && (l.get || l.set)
+							? Object.defineProperty(o, i, l)
+							: (o[i] = e[i]);
 					}
 				return ((o.default = e), r && r.set(e, o), o);
 			}
@@ -5464,7 +6350,8 @@
 			'use strict';
 			(Object.defineProperty(t, '__esModule', { value: !0 }),
 				!(function (e, t) {
-					for (var r in t) Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
+					for (var r in t)
+						Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
 				})(t, {
 					HTML_LIMITED_BOT_UA_RE: function () {
 						return n.HTML_LIMITED_BOT_UA_RE;
@@ -5496,7 +6383,8 @@
 			'use strict';
 			(Object.defineProperty(t, '__esModule', { value: !0 }),
 				!(function (e, t) {
-					for (var r in t) Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
+					for (var r in t)
+						Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
 				})(t, {
 					AppRouterContext: function () {
 						return o;
@@ -5534,12 +6422,16 @@
 			class o {
 				end(e) {
 					if ('ended' === this.state.state)
-						throw Object.defineProperty(Error('Span has already ended'), '__NEXT_ERROR_CODE', {
-							value: 'E17',
-							enumerable: !1,
-							configurable: !0,
-						});
-					((this.state = { state: 'ended', endTime: null != e ? e : Date.now() }), this.onSpanEnd(this));
+						throw Object.defineProperty(
+							Error('Span has already ended'),
+							'__NEXT_ERROR_CODE',
+							{ value: 'E17', enumerable: !1, configurable: !0 },
+						);
+					((this.state = {
+						state: 'ended',
+						endTime: null != e ? e : Date.now(),
+					}),
+						this.onSpanEnd(this));
 				}
 				constructor(e, t, r) {
 					var n, o;
@@ -5570,7 +6462,8 @@
 				}
 			}
 			let i = new a();
-			('function' == typeof t.default || ('object' == typeof t.default && null !== t.default)) &&
+			('function' == typeof t.default ||
+				('object' == typeof t.default && null !== t.default)) &&
 				void 0 === t.default.__esModule &&
 				(Object.defineProperty(t.default, '__esModule', { value: !0 }),
 				Object.assign(t.default, t),
@@ -5600,7 +6493,10 @@
 					return (0, f.getClientBuildManifest)().then((e) => e.sortedPages);
 				}
 				getMiddleware() {
-					return ((window.__MIDDLEWARE_MATCHERS = []), window.__MIDDLEWARE_MATCHERS);
+					return (
+						(window.__MIDDLEWARE_MATCHERS = []),
+						window.__MIDDLEWARE_MATCHERS
+					);
 				}
 				getDataHref(e) {
 					let { asPath: t, href: r, locale: n } = e,
@@ -5613,8 +6509,15 @@
 							'__NEXT_ERROR_CODE',
 							{ value: 'E303', enumerable: !1, configurable: !0 },
 						);
-					var m = e.skipInterpolation ? h : (0, u.isDynamicRoute)(_) ? (0, a.interpolateAs)(f, h, d).result : _;
-					let g = (0, i.default)((0, c.removeTrailingSlash)((0, l.addLocale)(m, n)), '.json');
+					var m = e.skipInterpolation
+						? h
+						: (0, u.isDynamicRoute)(_)
+							? (0, a.interpolateAs)(f, h, d).result
+							: _;
+					let g = (0, i.default)(
+						(0, c.removeTrailingSlash)((0, l.addLocale)(m, n)),
+						'.json',
+					);
 					return (0, o.addBasePath)('/_next/data/' + this.buildId + g + p, !0);
 				}
 				_isSsg(e) {
@@ -5626,7 +6529,10 @@
 							return {
 								page: e.component,
 								mod: e.exports,
-								styleSheets: e.styles.map((e) => ({ href: e.href, text: e.content })),
+								styleSheets: e.styles.map((e) => ({
+									href: e.href,
+									text: e.content,
+								})),
 							};
 						throw e.error;
 					});
@@ -5647,7 +6553,8 @@
 						})));
 				}
 			}
-			('function' == typeof t.default || ('object' == typeof t.default && null !== t.default)) &&
+			('function' == typeof t.default ||
+				('object' == typeof t.default && null !== t.default)) &&
 				void 0 === t.default.__esModule &&
 				(Object.defineProperty(t.default, '__esModule', { value: !0 }),
 				Object.assign(t.default, t),
@@ -5669,7 +6576,15 @@
 					httpEquiv: 'http-equiv',
 					noModule: 'noModule',
 				},
-				n = ['onLoad', 'onReady', 'dangerouslySetInnerHTML', 'children', 'onError', 'strategy', 'stylesheets'];
+				n = [
+					'onLoad',
+					'onReady',
+					'dangerouslySetInnerHTML',
+					'children',
+					'onError',
+					'strategy',
+					'stylesheets',
+				];
 			function o(e) {
 				return ['async', 'defer', 'noModule'].includes(e);
 			}
@@ -5677,12 +6592,16 @@
 				for (let [a, i] of Object.entries(t)) {
 					if (!t.hasOwnProperty(a) || n.includes(a) || void 0 === i) continue;
 					let l = r[a] || a.toLowerCase();
-					('SCRIPT' === e.tagName && o(l) ? (e[l] = !!i) : e.setAttribute(l, String(i)),
-						(!1 === i || ('SCRIPT' === e.tagName && o(l) && (!i || 'false' === i))) &&
+					('SCRIPT' === e.tagName && o(l)
+						? (e[l] = !!i)
+						: e.setAttribute(l, String(i)),
+						(!1 === i ||
+							('SCRIPT' === e.tagName && o(l) && (!i || 'false' === i))) &&
 							(e.setAttribute(l, ''), e.removeAttribute(l)));
 				}
 			}
-			('function' == typeof t.default || ('object' == typeof t.default && null !== t.default)) &&
+			('function' == typeof t.default ||
+				('object' == typeof t.default && null !== t.default)) &&
 				void 0 === t.default.__esModule &&
 				(Object.defineProperty(t.default, '__esModule', { value: !0 }),
 				Object.assign(t.default, t),
@@ -5733,7 +6652,8 @@
 						if (r.length !== Object.keys(t.query).length) return !1;
 						for (let n = r.length; n--; ) {
 							let o = r[n];
-							if (!t.query.hasOwnProperty(o) || e.query[o] !== t.query[o]) return !1;
+							if (!t.query.hasOwnProperty(o) || e.query[o] !== t.query[o])
+								return !1;
 						}
 					} else if (!t.hasOwnProperty(o) || e[o] !== t[o]) return !1;
 				}
@@ -5767,7 +6687,8 @@
 			'use strict';
 			(Object.defineProperty(t, '__esModule', { value: !0 }),
 				!(function (e, t) {
-					for (var r in t) Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
+					for (var r in t)
+						Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
 				})(t, {
 					VALID_LOADERS: function () {
 						return r;
@@ -5788,7 +6709,8 @@
 					minimumCacheTTL: 60,
 					formats: ['image/webp'],
 					dangerouslyAllowSVG: !1,
-					contentSecurityPolicy: "script-src 'none'; frame-src 'none'; sandbox;",
+					contentSecurityPolicy:
+						"script-src 'none'; frame-src 'none'; sandbox;",
 					contentDispositionType: 'attachment',
 					localPatterns: void 0,
 					remotePatterns: [],
@@ -5816,7 +6738,8 @@
 							? '' + t + r + a
 							: t + '/' + r + a;
 				};
-			('function' == typeof t.default || ('object' == typeof t.default && null !== t.default)) &&
+			('function' == typeof t.default ||
+				('object' == typeof t.default && null !== t.default)) &&
 				void 0 === t.default.__esModule &&
 				(Object.defineProperty(t.default, '__esModule', { value: !0 }),
 				Object.assign(t.default, t),

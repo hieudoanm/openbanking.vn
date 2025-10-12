@@ -9,7 +9,8 @@ const faqs = [
 	},
 	{
 		question: 'Open Banking đã có mặt tại Việt Nam chưa?',
-		answer: 'Đã có. Việt Nam đang áp dụng tiêu chuẩn Open Banking để hiện đại hóa hệ sinh thái tài chính.',
+		answer:
+			'Đã có. Việt Nam đang áp dụng tiêu chuẩn Open Banking để hiện đại hóa hệ sinh thái tài chính.',
 	},
 	{
 		question: 'Ai có thể sử dụng API này?',
@@ -21,7 +22,9 @@ const faqs = [
 export const FrequentlyAskedQuestions: FC = () => {
 	return (
 		<section id="faqs" className="mx-auto max-w-4xl bg-white px-4 py-16">
-			<h3 className="mb-12 text-center text-3xl font-semibold text-blue-700">Câu hỏi thường gặp</h3>
+			<h3 className="mb-12 text-center text-3xl font-semibold text-blue-700">
+				Câu hỏi thường gặp
+			</h3>
 			<div className="space-y-8">
 				{faqs.map((faq, index) => (
 					<div key={index} className="border-b pb-4">

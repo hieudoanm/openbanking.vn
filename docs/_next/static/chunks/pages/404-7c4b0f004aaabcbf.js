@@ -17,17 +17,26 @@
 				r = n.n(l);
 			let i = () =>
 				(0, s.jsxs)('div', {
-					className: 'flex min-h-screen flex-col items-center justify-center bg-white px-4 text-center',
+					className:
+						'flex min-h-screen flex-col items-center justify-center bg-white px-4 text-center',
 					children: [
-						(0, s.jsx)('h1', { className: 'mb-4 text-6xl font-bold text-green-600', children: '404' }),
-						(0, s.jsx)('h2', { className: 'mb-2 text-2xl font-semibold', children: 'Kh\xf4ng t\xecm thấy trang' }),
+						(0, s.jsx)('h1', {
+							className: 'mb-4 text-6xl font-bold text-green-600',
+							children: '404',
+						}),
+						(0, s.jsx)('h2', {
+							className: 'mb-2 text-2xl font-semibold',
+							children: 'Kh\xf4ng t\xecm thấy trang',
+						}),
 						(0, s.jsx)('p', {
 							className: 'mb-6 text-green-700',
-							children: 'Xin lỗi, trang bạn đang t\xecm kh\xf4ng tồn tại hoặc đ\xe3 bị di chuyển.',
+							children:
+								'Xin lỗi, trang bạn đang t\xecm kh\xf4ng tồn tại hoặc đ\xe3 bị di chuyển.',
 						}),
 						(0, s.jsx)(r(), {
 							href: '/',
-							className: 'rounded-full bg-green-600 px-6 py-3 text-lg text-white transition hover:bg-green-700',
+							className:
+								'rounded-full bg-green-600 px-6 py-3 text-lg text-white transition hover:bg-green-700',
 							children: 'Quay lại trang chủ',
 						}),
 					],

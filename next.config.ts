@@ -1,6 +1,7 @@
 import type { NextConfig } from 'next';
 
-const NODE_ENV: 'development' | 'production' | 'test' = process.env.NODE_ENV ?? 'development';
+const NODE_ENV: 'development' | 'production' | 'test' =
+	process.env.NODE_ENV ?? 'development';
 
 const nextConfig: NextConfig = {
 	/* config options here */

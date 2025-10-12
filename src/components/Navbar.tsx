@@ -16,7 +16,9 @@ export const Navbar: FC = () => {
 					<a href="#faqs" className="hover:text-blue-600">
 						FAQs
 					</a>
-					<Link href="#" className="rounded-md bg-blue-600 px-4 py-2 text-white transition hover:bg-blue-700">
+					<Link
+						href="#"
+						className="rounded-md bg-blue-600 px-4 py-2 text-white transition hover:bg-blue-700">
 						Get Started
 					</Link>
 				</div>

@@ -24,7 +24,11 @@
 				let { Component: n, pageProps: r } = e;
 				return (0, s.jsxs)(s.Fragment, {
 					children: [
-						(0, s.jsx)(t(), { children: (0, s.jsx)('title', { children: 'Open Banking in Vietnam' }) }),
+						(0, s.jsx)(t(), {
+							children: (0, s.jsx)('title', {
+								children: 'Open Banking in Vietnam',
+							}),
+						}),
 						(0, s.jsx)('div', { children: (0, s.jsx)(n, { ...r }) }),
 					],
 				});

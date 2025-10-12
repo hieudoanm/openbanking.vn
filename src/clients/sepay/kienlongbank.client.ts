@@ -22,12 +22,19 @@ export const countTransactions = async ({
 }): Promise<number | null> => {
 	const urlSearchParams = new URLSearchParams();
 	urlSearchParams.append('account_number', account_number);
-	if (transaction_date_min) urlSearchParams.append('transaction_date_min', transaction_date_min);
-	if (transaction_date_max) urlSearchParams.append('transaction_date_max', transaction_date_max);
+	if (transaction_date_min)
+		urlSearchParams.append('transaction_date_min', transaction_date_min);
+	if (transaction_date_max)
+		urlSearchParams.append('transaction_date_max', transaction_date_max);
 	if (since_id) urlSearchParams.append('since_id', since_id.toString());
 	const url: string = `https://my.sepay.vn/userapi/transactions/count?${urlSearchParams.toString()}`;
-	const headers = { 'Content-Type': 'application/json', Authorization: `Bearer ${process.env.KLB_API_KEY}` };
-	const { data: response, error } = await tryCatch(fetch(url, { method: 'GET', headers }));
+	const headers = {
+		'Content-Type': 'application/json',
+		Authorization: `Bearer ${process.env.KLB_API_KEY}`,
+	};
+	const { data: response, error } = await tryCatch(
+		fetch(url, { method: 'GET', headers }),
+	);
 	if (error) {
 		console.error('Error fetching transaction count:', error);
 		return null;
@@ -36,7 +43,9 @@ export const countTransactions = async ({
 		console.error('Error response from KLB API:', response);
 		return null;
 	}
-	const { data, error: jsonError } = await tryCatch<CountResponse>(response.json());
+	const { data, error: jsonError } = await tryCatch<CountResponse>(
+		response.json(),
+	);
 	if (jsonError) {
 		console.error('Error parsing JSON response:', jsonError);
 		return null;
@@ -93,16 +102,24 @@ export const getTransactions = async ({
 }) => {
 	const urlSearchParams = new URLSearchParams();
 	urlSearchParams.append('account_number', account_number);
-	if (transaction_date_min) urlSearchParams.append('transaction_date_min', transaction_date_min);
-	if (transaction_date_max) urlSearchParams.append('transaction_date_max', transaction_date_max);
+	if (transaction_date_min)
+		urlSearchParams.append('transaction_date_min', transaction_date_min);
+	if (transaction_date_max)
+		urlSearchParams.append('transaction_date_max', transaction_date_max);
 	if (since_id) urlSearchParams.append('since_id', since_id.toString());
 	if (limit) urlSearchParams.append('limit', limit.toString());
-	if (reference_number) urlSearchParams.append('reference_number', reference_number.toString());
+	if (reference_number)
+		urlSearchParams.append('reference_number', reference_number.toString());
 	if (amount_in) urlSearchParams.append('amount_in', amount_in.toString());
 	if (amount_out) urlSearchParams.append('amount_out', amount_out.toString());
 	const url: string = `https://my.sepay.vn/userapi/transactions/list?${urlSearchParams.toString()}`;
-	const headers = { 'Content-Type': 'application/json', Authorization: `Bearer ${process.env.KLB_API_KEY}` };
-	const { data: response, error } = await tryCatch(fetch(url, { method: 'GET', headers }));
+	const headers = {
+		'Content-Type': 'application/json',
+		Authorization: `Bearer ${process.env.KLB_API_KEY}`,
+	};
+	const { data: response, error } = await tryCatch(
+		fetch(url, { method: 'GET', headers }),
+	);
 	if (error) {
 		console.error('Error fetching transactions:', error);
 		return null;
@@ -111,7 +128,9 @@ export const getTransactions = async ({
 		console.error('Error response from KLB API:', response);
 		return null;
 	}
-	const { data, error: jsonError } = await tryCatch<TransactionsResponse>(response.json());
+	const { data, error: jsonError } = await tryCatch<TransactionsResponse>(
+		response.json(),
+	);
 	if (jsonError) {
 		console.error('Error parsing JSON response:', jsonError);
 		return null;
@@ -132,10 +151,19 @@ export type TransactionResponse = {
 	transaction: Transaction;
 };
 
-export const getTransaction = async ({ transaction_id }: { transaction_id: number }): Promise<Transaction | null> => {
+export const getTransaction = async ({
+	transaction_id,
+}: {
+	transaction_id: number;
+}): Promise<Transaction | null> => {
 	const url: string = `https://my.sepay.vn/userapi/transactions/details/${transaction_id}`;
-	const headers = { 'Content-Type': 'application/json', Authorization: `Bearer ${process.env.KLB_API_KEY}` };
-	const { data: response, error } = await tryCatch(fetch(url, { method: 'GET', headers }));
+	const headers = {
+		'Content-Type': 'application/json',
+		Authorization: `Bearer ${process.env.KLB_API_KEY}`,
+	};
+	const { data: response, error } = await tryCatch(
+		fetch(url, { method: 'GET', headers }),
+	);
 	if (error) {
 		console.error('Error fetching transaction details:', error);
 		return null;
@@ -144,7 +172,9 @@ export const getTransaction = async ({ transaction_id }: { transaction_id: numbe
 		console.error('Error response from KLB API:', response);
 		return null;
 	}
-	const { data, error: jsonError } = await tryCatch<TransactionResponse>(response.json());
+	const { data, error: jsonError } = await tryCatch<TransactionResponse>(
+		response.json(),
+	);
 	if (jsonError) {
 		console.error('Error parsing JSON response:', jsonError);
 		return null;
