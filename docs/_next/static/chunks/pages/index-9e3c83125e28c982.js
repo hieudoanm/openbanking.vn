@@ -1,10 +1,10 @@
 (self.webpackChunk_N_E = self.webpackChunk_N_E || []).push([
 	[332],
 	{
-		2825: (e, t, n) => {
+		1307: (e, t, n) => {
 			'use strict';
 			n.d(t, { k5: () => o });
-			var s = n(5977),
+			var s = n(2223),
 				r = {
 					color: void 0,
 					size: void 0,
@@ -158,19 +158,19 @@
 					: t(r);
 			}
 		},
-		3705: (e, t, n) => {
+		2780: (e, t, n) => {
 			(window.__NEXT_P = window.__NEXT_P || []).push([
 				'/',
 				function () {
-					return n(4882);
+					return n(7734);
 				},
 			]);
 		},
-		4882: (e, t, n) => {
+		7734: (e, t, n) => {
 			'use strict';
 			(n.r(t), n.d(t, { default: () => v }));
-			var s = n(7765),
-				r = n(6279);
+			var s = n(1503),
+				r = n(4486);
 			let i = [
 					{
 						question: 'Open Banking API l\xe0 g\xec?',
@@ -359,7 +359,7 @@
 							],
 						}),
 					});
-			var m = n(9476),
+			var m = n(5570),
 				u = n.n(m);
 			let b = () =>
 					(0, s.jsx)('nav', {
@@ -552,6 +552,6 @@
 		},
 	},
 	(e) => {
-		(e.O(0, [59, 476, 636, 593, 792], () => e((e.s = 3705))), (_N_E = e.O()));
+		(e.O(0, [291, 570, 636, 593, 792], () => e((e.s = 2780))), (_N_E = e.O()));
 	},
 ]);

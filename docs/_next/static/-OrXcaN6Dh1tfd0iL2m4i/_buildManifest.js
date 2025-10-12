@@ -16,15 +16,15 @@
 			bitArray: [],
 		},
 		'/': [
-			'static/chunks/6de85cd9-b7a693716ae4c1e5.js',
+			'static/chunks/954ef8d5-a8e53501dc62cb2b.js',
 			s,
-			'static/chunks/pages/index-f74715a30657166f.js',
+			'static/chunks/pages/index-9e3c83125e28c982.js',
 		],
-		'/404': [s, 'static/chunks/pages/404-7c4b0f004aaabcbf.js'],
-		'/500': [s, 'static/chunks/pages/500-581d8a9159c25427.js'],
-		'/_error': ['static/chunks/pages/_error-fc28e980d31c3751.js'],
-		'/app': ['static/chunks/pages/app-4439d8bad53ca136.js'],
+		'/404': [s, 'static/chunks/pages/404-9ffc1279ddc048ef.js'],
+		'/500': [s, 'static/chunks/pages/500-590157fe7e18129c.js'],
+		'/_error': ['static/chunks/pages/_error-a34b1df36ac0f996.js'],
+		'/app': ['static/chunks/pages/app-2a721d6bcc62b34e.js'],
 		sortedPages: ['/', '/404', '/500', '/_app', '/_error', '/app'],
 	};
-})(0, 'static/chunks/476-7282d6af0646777c.js', 1e-4, null)),
+})(0, 'static/chunks/570-e41b933fb5a57723.js', 1e-4, null)),
 	self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB());

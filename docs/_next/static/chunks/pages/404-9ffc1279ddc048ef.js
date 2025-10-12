@@ -1,29 +1,37 @@
 (self.webpackChunk_N_E = self.webpackChunk_N_E || []).push([
-	[421],
+	[336],
 	{
-		3513: (e, n, t) => {
+		2408: (e, t, n) => {
+			(window.__NEXT_P = window.__NEXT_P || []).push([
+				'/404',
+				function () {
+					return n(3831);
+				},
+			]);
+		},
+		3831: (e, t, n) => {
 			'use strict';
-			(t.r(n), t.d(n, { default: () => c }));
-			var s = t(7765),
-				l = t(9476),
-				r = t.n(l);
-			let c = () =>
+			(n.r(t), n.d(t, { default: () => i }));
+			var s = n(1503),
+				l = n(5570),
+				r = n.n(l);
+			let i = () =>
 				(0, s.jsxs)('div', {
 					className:
 						'flex min-h-screen flex-col items-center justify-center bg-white px-4 text-center',
 					children: [
 						(0, s.jsx)('h1', {
 							className: 'mb-4 text-6xl font-bold text-green-600',
-							children: '500',
+							children: '404',
 						}),
 						(0, s.jsx)('h2', {
 							className: 'mb-2 text-2xl font-semibold',
-							children: 'Lỗi m\xe1y chủ',
+							children: 'Kh\xf4ng t\xecm thấy trang',
 						}),
 						(0, s.jsx)('p', {
 							className: 'mb-6 text-green-700',
 							children:
-								'Đ\xe3 xảy ra lỗi kh\xf4ng mong muốn tr\xean m\xe1y chủ. Ch\xfang t\xf4i đang xử l\xfd vấn đề n\xe0y.',
+								'Xin lỗi, trang bạn đang t\xecm kh\xf4ng tồn tại hoặc đ\xe3 bị di chuyển.',
 						}),
 						(0, s.jsx)(r(), {
 							href: '/',
@@ -34,16 +42,8 @@
 					],
 				});
 		},
-		8306: (e, n, t) => {
-			(window.__NEXT_P = window.__NEXT_P || []).push([
-				'/500',
-				function () {
-					return t(3513);
-				},
-			]);
-		},
 	},
 	(e) => {
-		(e.O(0, [476, 636, 593, 792], () => e((e.s = 8306))), (_N_E = e.O()));
+		(e.O(0, [570, 636, 593, 792], () => e((e.s = 2408))), (_N_E = e.O()));
 	},
 ]);
